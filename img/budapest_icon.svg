@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 75.564438 90.404793"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg1183"
+   sodipodi:docname="budapest_icon.svg"
+   width="75.564438"
+   height="90.404793"
+   inkscape:version="0.92.3 (d244b95, 2018-08-02)">
+  <metadata
+     id="metadata1187">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Noun_Project_100Icon_10px_grid_ FINAL_EXPANDED</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1535"
+     inkscape:window-height="876"
+     id="namedview1185"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.736"
+     inkscape:cx="37.782233"
+     inkscape:cy="32.96729"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1183" />
+  <defs
+     id="defs1023">
+    <style
+       id="style1021">.a{fill:#050001;}</style>
+  </defs>
+  <title
+     id="title1025">Noun_Project_100Icon_10px_grid_ FINAL_EXPANDED</title>
+  <path
+     class="a"
+     d="M 14.216803,28.14307 H 9.0127033 a 1.981,1.981 0 0 1 0,-3.96191 1.94833,1.94833 0 0 1 0.37012,0.03516 2.53744,2.53744 0 0 1 4.5351597,0.3667 1.81809,1.81809 0 0 1 2.09277,1.76758 1.79526,1.79526 0 0 1 -1.79395,1.79247 z M 9.0127033,24.89014 a 1.272,1.272 0 0 0 0,2.54395 h 5.2040997 a 1.08507,1.08507 0 0 0 1.085,-1.0835 1.10375,1.10375 0 0 0 -1.48828,-1.00586 l -0.38184,0.15088 -0.09375,-0.39893 A 1.82743,1.82743 0 0 0 9.8896933,24.77734 l -0.13477,0.30225 -0.31055,-0.11328 a 1.268,1.268 0 0 0 -0.43167,-0.07617 z"
+     id="path1027"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 63.546883,23.45508 h -9.22365 a 2.90332,2.90332 0 1 1 0.708,-5.71924 4.22044,4.22044 0 0 1 7.71973,-0.65527 3.23687,3.23687 0 1 1 0.7959,6.37451 z m -9.22365,-5.09766 a 2.19434,2.19434 0 0 0 0,4.38867 h 9.22363 a 2.52759,2.52759 0 1 0 -0.8623,-4.90527 l -0.30957,0.11035 -0.13379,-0.2998 a 3.51115,3.51115 0 0 0 -6.625,0.61523 l -0.09375,0.40088 -0.38281,-0.15283 a 2.1875,2.1875 0 0 0 -0.81641,-0.15723 z"
+     id="path1029"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="22.522465"
+     y="49.366699"
+     width="0.70898002"
+     height="21.28809"
+     id="rect1031"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="46.372074"
+     y="49.366699"
+     width="0.70898002"
+     height="21.789551"
+     id="rect1033"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="28.565434"
+     y="49.153809"
+     width="0.70898002"
+     height="25.654301"
+     id="rect1035"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="-11.191611"
+     y="59.757019"
+     width="7.0229402"
+     height="0.70868999"
+     transform="rotate(-32.50752)"
+     id="rect1037"
+     style="fill:#050001" />
+  <polygon
+     class="a"
+     points="32.369,61.417 35.085,61.417 35.085,62.126 32.67,62.126 29.386,65.525 28.876,65.033 "
+     id="polygon1039"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <rect
+     class="a"
+     x="-46.574245"
+     y="49.99015"
+     width="3.7132101"
+     height="0.70859998"
+     transform="rotate(-46.00509)"
+     id="rect1041"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="19.947273"
+     y="52.858398"
+     width="0.70898002"
+     height="3.85059"
+     id="rect1043"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="25.000984"
+     y="39.654301"
+     width="0.70898002"
+     height="3.53613"
+     id="rect1045"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="49.950203"
+     y="39.654301"
+     width="0.70898002"
+     height="3.53613"
+     id="rect1047"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 44.379893,27.27344 h -13.32032 l 2.13966,-3.42139 h 9.041 z m -12.041,-0.709 h 10.7617 l -1.25293,-2.00342 h -8.25586 z"
+     id="path1049"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 43.833993,24.56104 h -12.22852 v -3.42139 h 12.22852 z m -11.51953,-0.709 h 10.81054 v -2.00341 h -10.81054 z"
+     id="path1051"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <polygon
+     class="a"
+     points="45.259,13.926 45.968,13.926 45.968,26.202 53.907,26.202 53.907,13.926 54.616,13.926 54.616,26.911 45.259,26.911 "
+     id="polygon1053"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <path
+     class="a"
+     d="m 39.529303,21.49414 h -0.709 v -3.30273 a 1.10332,1.10332 0 0 0 -2.2002,0 v 3.30273 h -0.709 v -3.30273 a 1.811,1.811 0 0 1 3.61816,0 z"
+     id="path1055"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 42.394533,13.28271 -0.709,-0.03662 a 4.08123,4.08123 0 0 0 -0.77441,-2.46045 c -1.94922,-2.4375 -2.96777,-2.90918 -3.19531,-2.98926 -0.209,0.07471 -1.22656,0.53711 -3.18848,2.98926 a 4.08447,4.08447 0 0 0 -0.77344,2.46045 l -0.709,0.03662 a 4.75776,4.75776 0 0 1 0.92871,-2.93994 c 2.38965,-2.98682 3.50781,-3.24365 3.708,-3.26465 0.27441,0.021 1.39453,0.27783 3.7832,3.26465 a 4.75467,4.75467 0 0 1 0.92973,2.93994 z"
+     id="path1057"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="37.365246"
+     y="0"
+     width="0.70898002"
+     height="7.4306598"
+     id="rect1059"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="35.908215"
+     y="1.45752"
+     width="3.625"
+     height="0.70898002"
+     id="rect1061"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 50.625983,39.6543 h -0.709 v -2.94434 a 10.67234,10.67234 0 0 0 -6.22656,-9.43652 h -11.74319 a 10.67383,10.67383 0 0 0 -6.22756,9.43652 v 2.94434 h -0.709 v -2.94434 a 11.38686,11.38686 0 0 1 6.69824,-10.10938 l 0.15532,-0.03608 12.06348,0.03613 a 11.38468,11.38468 0 0 1 6.69824,10.10938 z"
+     id="path1063"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 32.536143,39.6543 h -0.709 a 34.08281,34.08281 0 0 1 0.90137,-8.47266 c 0.93945,-3.5791 2.30176,-4.51953 2.35938,-4.55762 l 0.39258,0.58984 -0.19629,-0.29492 0.19922,0.293 c -0.01172,0.0083 -1.21,0.877 -2.06934,4.14941 a 33.40524,33.40524 0 0 0 -0.87792,8.29295 z"
+     id="path1065"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 43.614233,39.6543 h -0.709 c 0,-10.3584 -2.915,-12.4209 -2.94434,-12.44043 l 0.39258,-0.58984 c 0.13384,0.08886 3.26076,2.29589 3.26076,13.03027 z"
+     id="path1067"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="23.843754"
+     y="39.299801"
+     width="27.93066"
+     height="0.70898002"
+     id="rect1069"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 37.819343,37.3208 a 2.1118,2.1118 0 0 1 -2.15332,-2.063 v -2.41063 a 2.15483,2.15483 0 0 1 4.30566,0 v 2.41064 a 2.11156,2.11156 0 0 1 -2.15234,2.06299 z m 0,-5.82666 a 1.40219,1.40219 0 0 0 -1.44434,1.353 v 2.41064 a 1.44683,1.44683 0 0 0 2.8877,0 v -2.41061 a 1.40194,1.40194 0 0 0 -1.44336,-1.35303 z"
+     id="path1071"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="25.355473"
+     y="42.835941"
+     width="24.949221"
+     height="0.70898002"
+     id="rect1073"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="33.395515"
+     y="13.75098"
+     width="8.6484404"
+     height="0.70898002"
+     id="rect1075"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="37.365246"
+     y="11.146481"
+     width="0.70898002"
+     height="2.9589801"
+     id="rect1077"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="35.670906"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1079"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="28.566414"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1081"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="39.237312"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1083"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="42.803715"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1085"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="46.375984"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1087"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="25.000984"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1089"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="32.130863"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1091"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="49.950203"
+     y="43.19043"
+     width="0.70898002"
+     height="3.16992"
+     id="rect1093"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 36.596683,68.48389 h -0.709 v -14.1211 a 1.09131,1.09131 0 1 0 -2.18262,0 v 14.1211 h -0.709 v -14.1211 a 1.800295,1.800295 0 1 1 3.60059,0 z"
+     id="path1095"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 42.554693,68.48389 h -0.709 v -14.1211 a 1.09082,1.09082 0 1 0 -2.18164,0 v 14.06446 h -0.709 V 54.36279 a 1.799805,1.799805 0 1 1 3.59961,0 z"
+     id="path1097"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <polygon
+     class="a"
+     points="58.59,76.203 55.982,71.583 53.286,76.286 52.671,75.934 55.988,70.149 59.299,76.017 59.299,93.976 58.59,93.976 "
+     id="polygon1099"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="52.65,76.203 50.046,71.583 47.394,76.205 47.394,95.113 46.685,95.113 46.685,76.015 50.052,70.149 53.359,76.017 53.359,95.113 52.65,95.113 "
+     id="polygon1101"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="40.695,76.016 44.06,70.149 47.323,75.936 46.706,76.284 44.054,71.583 41.404,76.204 41.404,93.976 40.695,93.976 "
+     id="polygon1103"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="34.74,76.016 38.104,70.149 41.366,75.936 40.749,76.284 38.099,71.583 35.449,76.204 35.449,92.027 34.74,92.027 "
+     id="polygon1105"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="64.536,76.203 61.932,71.583 59.235,76.286 58.62,75.934 61.937,70.149 65.245,76.017 65.245,92.125 64.536,92.125 "
+     id="polygon1107"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="70.499,76.203 67.895,71.583 65.198,76.286 64.583,75.934 67.9,70.149 71.208,76.017 71.208,88.773 70.499,88.773 "
+     id="polygon1109"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="28.776,76.016 32.141,70.149 35.403,75.936 34.786,76.284 32.135,71.583 29.485,76.204 29.485,88.667 28.776,88.667 "
+     id="polygon1111"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <polygon
+     class="a"
+     points="28.798,48.607 18.945,48.607 18.945,78 18.236,78 18.236,47.898 29.507,47.898 29.507,83.07 28.798,83.07 "
+     id="polygon1113"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <rect
+     class="a"
+     x="6.3730536"
+     y="56.354488"
+     width="10.56152"
+     height="0.70898002"
+     id="rect1115"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="M 13.923833,53.4834 H 9.5986333 v -4.97119 a 2.1626,2.1626 0 0 1 4.3251997,0 z m -3.61621,-0.709 h 2.90723 v -4.26219 a 1.453615,1.453615 0 0 0 -2.90723,0 z"
+     id="path1117"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="M 13.923833,71.2925 H 9.5986333 v -9.22463 a 2.1626,2.1626 0 0 1 4.3251997,0 z m -3.61621,-0.709 h 2.90723 v -8.51563 a 1.453615,1.453615 0 0 0 -2.90723,0 z"
+     id="path1119"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 15.982433,43.15088 h -0.709 v -4.605 a 3.5127,3.5127 0 1 0 -7.0253897,0 v 4.605 h -0.709 v -4.605 a 4.22168,4.22168 0 1 1 8.4433597,0 z"
+     id="path1121"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="6.0361433"
+     y="39.286621"
+     width="11.21875"
+     height="0.70898002"
+     id="rect1123"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 13.930673,39.64111 h -0.709 c 0,-4.19238 -1.51953,-4.61279 -1.53516,-4.61621 l 0.13965,-0.69531 c 0.21486,0.04053 2.10451,0.53174 2.10451,5.31152 z"
+     id="path1125"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="M 10.299813,39.64111 H 9.5908133 c 0,-4.77979 1.8896497,-5.271 2.1044897,-5.31152 l 0.13965,0.69531 c -0.01561,0.0034 -1.53514,0.42383 -1.53514,4.61621 z"
+     id="path1127"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="13.214852"
+     y="39.641109"
+     width="0.70898002"
+     height="3.5097699"
+     id="rect1129"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="9.5986433"
+     y="39.641109"
+     width="0.70898002"
+     height="3.5097699"
+     id="rect1131"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="11.406253"
+     y="30.533199"
+     width="0.70898002"
+     height="4.14502"
+     id="rect1133"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="10.403323"
+     y="31.536621"
+     width="2.7158201"
+     height="0.70898002"
+     id="rect1135"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="3.6344266"
+     y="95.348869"
+     width="0.70859998"
+     height="3.54193"
+     transform="rotate(-44.01137)"
+     id="rect1137"
+     style="fill:#050001" />
+  <polygon
+     class="a"
+     points="70.493,47.898 81.764,47.898 81.764,78.167 81.055,78.167 81.055,48.607 71.202,48.607 71.202,83.07 70.493,83.07 "
+     id="polygon1139"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <rect
+     class="a"
+     x="58.62989"
+     y="56.354488"
+     width="10.56152"
+     height="0.70898002"
+     id="rect1141"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 65.965823,53.4834 h -4.32519 v -4.97119 a 2.1626,2.1626 0 0 1 4.3252,0 z m -3.61621,-0.709 h 2.90723 v -4.26219 a 1.453615,1.453615 0 0 0 -2.90723,0 z"
+     id="path1143"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 65.965823,71.2925 h -4.32519 v -9.22463 a 2.1626,2.1626 0 0 1 4.3252,0 z m -3.61621,-0.709 h 2.90723 v -8.51563 a 1.453615,1.453615 0 0 0 -2.90723,0 z"
+     id="path1145"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 68.025393,43.15088 h -0.709 v -4.605 a 3.5127,3.5127 0 1 0 -7.02539,0 v 4.605 h -0.709 v -4.605 a 4.22168,4.22168 0 1 1 8.44336,0 z"
+     id="path1147"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="58.309578"
+     y="39.286621"
+     width="11.21875"
+     height="0.70898002"
+     id="rect1149"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 62.342783,39.64111 h -0.709 c 0,-4.77979 1.88965,-5.271 2.10449,-5.31152 l 0.13965,0.69531 c -0.01561,0.0034 -1.53514,0.42383 -1.53514,4.61621 z"
+     id="path1151"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 65.973643,39.64111 h -0.709 c 0,-4.19238 -1.51953,-4.61279 -1.53516,-4.61621 l 0.13965,-0.69531 c 0.21486,0.04053 2.10451,0.53174 2.10451,5.31152 z"
+     id="path1153"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="61.640633"
+     y="39.641109"
+     width="0.70898002"
+     height="3.5097699"
+     id="rect1155"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="65.256844"
+     y="39.641109"
+     width="0.70898002"
+     height="3.5097699"
+     id="rect1157"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="63.449226"
+     y="30.533199"
+     width="0.70898002"
+     height="4.14502"
+     id="rect1159"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="62.445328"
+     y="31.536621"
+     width="2.7158201"
+     height="0.70898002"
+     id="rect1161"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 52.869143,49.72119 h -30.18847 l -2.10156,-3.37012 h 34.3916 z m -29.7959,-0.709 h 29.40333 l 1.2168,-1.95215 h -31.83692 z"
+     id="path1163"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="52.292007"
+     y="49.366699"
+     width="0.70898002"
+     height="21.28809"
+     id="rect1165"
+     style="fill:#050001" />
+  <rect
+     class="a"
+     x="-19.846624"
+     y="67.86792"
+     width="0.70868999"
+     height="7.0229402"
+     transform="rotate(-57.46679)"
+     id="rect1167"
+     style="fill:#050001" />
+  <polygon
+     class="a"
+     points="64.874,62.126 64.874,61.417 67.59,61.417 71.083,65.033 70.573,65.525 67.289,62.126 "
+     id="polygon1169"
+     style="fill:#050001"
+     transform="translate(-12.217767,-5.0625)" />
+  <rect
+     class="a"
+     x="54.867195"
+     y="52.858398"
+     width="0.70898002"
+     height="3.85059"
+     id="rect1171"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 13.715823,24.42139 -0.46094,-0.53906 a 37.55738,37.55738 0 0 1 20.09863,-8.78516 l 0.082,0.7041 a 36.84978,36.84978 0 0 0 -19.71969,8.62012 z"
+     id="path1173"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="M 37.782233,90.40479 A 37.78282,37.78282 0 0 1 9.5439533,27.52002 l 0.5292997,0.47168 a 37.07292,37.07292 0 1 0 50.3623,-4.71777 l 0.43359,-0.56055 a 37.783,37.783 0 0 1 -23.08691,67.69141 z"
+     id="path1175"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+  <path
+     class="a"
+     d="m 52.708013,18.67676 a 36.82729,36.82729 0 0 0 -10.70508,-2.88965 l 0.08008,-0.7041 a 37.51467,37.51467 0 0 1 10.91016,2.94531 z"
+     id="path1177"
+     inkscape:connector-curvature="0"
+     style="fill:#050001" />
+</svg>
