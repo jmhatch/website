@@ -1,0 +1,37 @@
+<div class="jumbotron budapest">
+    <div class="container">
+        <h1>Budapest, Hungary</h1>
+        <h2 class="lead">Days 2 & 3</h2>
+        <img class="img-responsive" src="img/hungary_outline.svg">
+    </div>
+</div>
+<div class="container">
+	<div class="row pad" ng-controller="budapestMapCtrl">
+        <div class="col-xs-7">
+            <div class="thumbnail">
+                <leaflet controls="controls" defaults="defaults" geojson="geojson" lf-center="center" markers="markers" width="100%" height="525px"></leaflet>
+            </div>
+		</div>
+		<div class="col-xs-5">
+			<h1 class='text-center'>Itinerary</h1>
+            <h2>Day 2</h2>
+            <ul class="h3">
+				<li style="padding: 5px;">Arrive in Budapest</li>
+			</ul> 
+            <h2>Day 3</h2>
+			<ul class="h3">
+				<li style="padding: 5px;">Budapest City Tour</li>
+                <ul class="h4">
+                    <li>Parliament</li>
+                    <li>Hero's Square</li>
+                    <li>Great Market Hall</li>
+                    <li>Royal Palace (Buda Castle)</li>
+                    <li>Matthias Church</li>
+                    <li>Fisherman's Bastion</li>
+                </ul>
+                <li style="padding: 5px;">Parliament, St. Stephen's, & Great Market Hall</li>
+                <li style="padding: 5px;">Danube Dinner Cruise</li>
+			</ul> 
+		</div>
+	</div>
+</div>

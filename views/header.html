@@ -1,0 +1,23 @@
+<header>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container" ng-controller="NavbarBtnCtrl">
+			<div class="navbar-header">
+				<a class="navbar-brand navbarLogo" ng-click="setActive('app')" ui-sref="app" title="Hatch">
+					<span><img src="img/hatchLogo.png" alt="Hatch"/></span>
+				</a>
+				<button class="navbar-toggle" type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" uib-collapse="navCollapsed">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a role="button" ng-class="isActive('app.budapest') ? 'active' : ''" ng-click="setActive('app.budapest')" ui-sref="app.budapest"> Budapest</a></li>
+                    <li><a role="button" ng-class="isActive('app.vienna') ? 'active' : ''" ng-click="setActive('app.vienna')" ui-sref="app.vienna"> Vienna</a></li>
+                    <li><a role="button" ng-class="isActive('app.prague') ? 'active' : ''" ng-click="setActive('app.prague')" ui-sref="app.prague"> Prague</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
