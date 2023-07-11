@@ -1,5 +1,4 @@
 .Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+.git
 old_gh_pages/
+.Rprofile
