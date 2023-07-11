@@ -2,3 +2,5 @@
 .git
 old_gh_pages/
 .Rprofile
+
+/.quarto/
