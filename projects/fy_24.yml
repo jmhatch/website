@@ -1,0 +1,24 @@
+- title: boemWind
+  center: Northeast Fisheries Science Center
+  division: Population and Ecosystems Monitoring and Analysis Division
+  branch: Offshore Wind Ecology Branch
+  role: R package
+  url: https://github.com/jmhatch-NOAA/boemWind
+  logo: logos/boemWind_logo.png
+  description: A GitHub repository of BOEM Wind Energy Areas (WEAs) in simple features, sf, format stored in an *.rda file for use with R.
+
+- title: PAMvieweR
+  center: Northeast Fisheries Science Center
+  division: Protected Species Division
+  branch: Passive Acoustics Branch
+  role: R package
+  url: https://github.com/jmhatch-NOAA/READ-PSB-PA-PAMvieweR
+  logo: logos/PAMvieweR_logo.png
+  description: Facilitating exploratory data analysis (EDA) for passive acoustic data stored in the iternal NEFSC database (db), Makara.
+
+- title: NEFSCspatial
+  center: Northeast Fisheries Science Center
+  role: R package
+  url: https://github.com/NEFSC/NEFSC-Spatial
+  logo: logos/NEFSCspatial_logo.png
+  description: A repository of spatial data (vectors) in simple features, sf, format.

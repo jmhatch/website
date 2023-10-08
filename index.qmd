@@ -1,14 +1,32 @@
 ---
-title: "Joshua Hatch"
-image: headshot.jpg
-about: 
-  template: trestles
-  image-shape: round
-  image-width: 16em
-  links:
-    - text: GitHub
-      href: https://github.com/jmhatch
-    - text: Email
-      href: mailto:joshua.hatch@noaa.gov
+comments: false
+page-layout: full
+format:
+  html: 
+    margin-top: 0em
+    margin-bottom: 0em
+    minimal: true
+    smooth-scroll: true
+    fig-responsive: true
 ---
-        
+
+::: {.column-screen}
+```{=html}
+<link rel="stylesheet" href="html/index_styles.css">
+<div class="gradient_bg">
+    <div class="hero section_padding">
+        <div class="hero_content">
+            <h1>Hi, I'm <span class="gradient_text">Josh</span>.</h1>
+            <p>I'm a Marine Resource Management Specialist with NOAA Fisheries  
+            <a href="https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center">@NEFSC</a>. I work at the intersection of protected species and offshore wind.</p>
+            <p>Learn more about how offshore wind can affect endangered or threatened species!</p>
+            <a class="btn btn-primary" style="color: black;"  href="https://www.fisheries.noaa.gov/topic/offshore-wind-energy/protecting-marine-life" role="button">Click here</a>
+        </div>
+        <div class="hero_image">
+            <img src="img/headshot.jpg"/>
+        </div>
+    </div>
+    <img id="bottom_wave" src="img/whale_wave.svg"/>
+</div>
+```
+:::

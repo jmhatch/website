@@ -1,19 +1,76 @@
+# This file controls the settings for your Quarto template from www.marvinschmitt.com
+
+# website settings
+website:
+  title: "Joshua Hatch" # Your name
+  description: "A quantitative ecologist" # A brief slogan (optional)
+  image: /img/headshot.jpg
+  favicon: /img/favicon.png
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    pinned: true
+    logo: /img/logo.png
+    
+    # your sub-pages
+    left:
+      - text: Projects
+        href: projects/index.qmd
+
+    # your social media handles
+    right:
+      - text: ' '
+        icon: binoculars-fill
+        aria-label: eBird
+        href: map/index.qmd
+      - icon: github
+        menu:
+            - text: Source Code
+              url:  https://github.com/jmhatch/jmhatch.github.io
+            - text: Report a Bug
+              url:  https://github.com/jmhatch/jmhatch.github.io/issues
+      - icon: envelope
+        aria-label: email
+        href: "mailto:joshua.hatch@noaa.gov"  
+  
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+    type: textbox
+    
+  page-footer: 
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} 2023 Joshua Hatch CC BY-SA 4.0</span>
+    center: |
+      <span class="faux-block">Website Template by <a href="https://www.marvinschmitt.com/">Marvin Schmitt</a></span>
+      <span class="faux-block">Egg by İsmail Can Yiğitgör from <a href="https://thenounproject.com/browse/icons/term/egg/" target="_blank" title="Egg Icons">Noun Project</a> (CC BY 3.0)</span>
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      
 project:
   type: website
   output-dir: docs
+  
+preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
 
-website:
-  title: "Joshua Hatch"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+execute:
+  freeze: true
+  echo: false
+  warning: false
+  
 format:
   html:
-    theme: darkly
-    css: styles.css
-    page-layout: full
-    
-editor: visual
+    fontsize: 1.1em
+    theme: 
+      - pulse
+      - html/styles.scss
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true

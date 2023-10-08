@@ -1,0 +1,20 @@
+---
+title: "Projects"
+listing:
+  - id: fy_24
+    contents: 
+      - fy_24.yml
+    sort: "date desc"
+    template: ../html/projects/listing.ejs
+title-block-banner: rgba(0, 70, 127, 1)
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Fiscal year
+comments: false
+---
+
+## FY 2023--24
+
+::: {#fy_24}
+:::
