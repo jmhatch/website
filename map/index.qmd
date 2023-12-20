@@ -22,7 +22,7 @@ L = {
 ```
 
 ```{ojs}
-// load geoj
+// load geojson
 fed_public_lands = await FileAttachment("data/protected_lands_visited.geojson").json();
 
 // load json

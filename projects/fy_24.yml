@@ -5,8 +5,8 @@
   role: R package
   url: https://github.com/jmhatch-NOAA/boemWind
   logo: logos/boemWind_logo.png
-  description: A GitHub repository of BOEM Wind Energy Areas (WEAs) in simple features, sf, format stored in an *.rda file for use with R.
-
+  description: A repository of BOEM Wind Energy Areas (WEAs) in simple features, sf, format stored in an *.rda file for use with R. Also includes locations of offshore wind turbines from the USGS U.S. Wind Turbine Database.
+  
 - title: PAMvieweR
   center: Northeast Fisheries Science Center
   division: Protected Species Division
