@@ -1,7 +1,7 @@
 - title: boemWind
   center: Northeast Fisheries Science Center
   division: Population and Ecosystems Monitoring and Analysis Division
-  branch: Offshore Wind Ecology Branch
+  branch: Offshore Wind and Ecology Branch
   role: R package
   url: https://github.com/jmhatch-NOAA/boemWind
   logo: logos/boemWind_logo.png
