@@ -1,6 +1,7 @@
 .Rproj.user
 .git
-old_gh_pages/
 .Rprofile
-
 /.quarto/
+
+old_gh_pages/
+data-raw/ # git restore --staged data-raw/
