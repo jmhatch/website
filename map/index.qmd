@@ -16,7 +16,9 @@ L = {
     const href = await require.resolve("leaflet/dist/leaflet.css");
     document.head.appendChild(L._style = html`<link href=${href} rel=stylesheet>`);
   }
-
+  L.esri = await require("esri-leaflet/dist/esri-leaflet.js");
+  // L.esri.Heat = await r("esri-leaflet-heatmap");
+  // await r("leaflet.heat").catch(() => L.heatLayer);
   return L;
 };
 ```
@@ -139,30 +141,47 @@ container = {
 ```{ojs}
 public_lands = {
   
-  let map = L.map(container, {minZoom: 0, maxZoom: 16});
+  // let map = L.map(container, {minZoom: 0, maxZoom: 16}); // define zoom level globally, but decided to do this on a layer by layer basis
+  // https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/#conversion-tool
+  // LOD is the zoom level, if not specified use the conversion tool to translate min / max scale to zoom level
+  
+  let map = L.map(container);
   
   // add basemap layers
   const usgs = "<a href='https://www.usgs.gov/'>U.S. Geological Survey</a> | <a href='https://www.usgs.gov/laws/policies_notices.html'>Policies</a>";
+
+  const MassGIS_Basemap = L.esri.tiledMapLayer({
+    url: 'https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGISBasemap/MapServer',
+    attribution: "<a href='https://massgis.maps.arcgis.com/home/user.html?user=MassGIS'>MassGIS, Mass. Executive Office of Technology Services and Security</a>",
+    ext: 'png',
+    minZoom: 7, 
+    maxZoom: 19
+  });
   
   const USGS_Img = L.tileLayer(
   'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', 
   {
   	attribution: usgs,
-  	ext: 'png'
+  	ext: 'png',
+    minZoom: 0,
+    maxZoom: 16
   });
   
   const USGS_Topo = L.tileLayer(
   'https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}', 
   {
     attribution: usgs,
-    ext: 'png'
+    ext: 'png',
+    minZoom: 0,
+    maxZoom: 16
   }).addTo(map);
-  
+
   // button to toggle basemap layer selection
   L.control.layers(
     {
       "USGS Topo": USGS_Topo,
-      "USGS Imagery Topo": USGS_Img
+      "USGS Imagery Topo": USGS_Img,
+      "MassGIS": MassGIS_Basemap
     },
     null,
     {position: 'topleft'}
