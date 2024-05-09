@@ -4,4 +4,4 @@
 /.quarto/
 
 old_gh_pages/
-data-raw/ # git restore --staged data-raw/
+data-raw/ # git restore --staged data-raw/ or git reset data-raw/
