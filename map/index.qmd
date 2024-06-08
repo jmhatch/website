@@ -131,7 +131,7 @@ container = {
   let x = d3.create("div")
   
   // x.attr("style", `width:100%;height:${window.outerHeight * 0.65}px`);
-  x.attr("style", `width:100%; height:${window.innerHeight}px`);
+  x.attr("style", `width:100%; min-height:750px`);
 
   return x.node();
 }
