@@ -26,7 +26,7 @@ format:
             <img src="img/headshot.jpg"/>
         </div>
     </div>
-    <img id="bottom_wave" src="img/whale_wave.svg"/>
+    <img id="bottom_wave" src="img/waves.svg"/>
 </div>
 ```
 :::
