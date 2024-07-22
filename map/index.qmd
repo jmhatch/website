@@ -407,4 +407,4 @@ geojson.eachLayer(e => {
 });
 ```
 
-The boundaries for public lands are approximate and were obtained from the [PAD-US](https://www.usgs.gov/programs/gap-analysis-project/science/pad-us-data-overview) database or elsewhere.
+The boundaries for public lands are approximate and were obtained from the [PAD-US](https://www.usgs.gov/programs/gap-analysis-project/science/pad-us-data-overview) database or elsewhere. Public land, here, refers to land that is accessible to the public and not necessarily public property. 
