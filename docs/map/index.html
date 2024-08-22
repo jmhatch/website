@@ -266,12 +266,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>      }</span>
 <span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    })</span>
 <span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">then</span>(res <span class="kw">=&gt;</span> {</span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> res<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> bird_sightings <span class="op">=</span> res<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>      <span class="co">// console.log(bird_sightings);</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> bird_sightings<span class="op">;</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
@@ -281,7 +284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
 <div class="panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="71" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 70;"><span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>viewof lands <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(land_names<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Public Lands:"</span> })<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="74" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>viewof lands <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(land_names<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Public Lands:"</span> })<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="declaration">
 
@@ -290,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="btn-inline">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="76" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 75;"><span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>viewof updateLand <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>([[<span class="st">"Add"</span><span class="op">,</span> value <span class="kw">=&gt;</span> [<span class="st">"add"</span><span class="op">,</span> lands]]<span class="op">,</span> [<span class="st">"Remove"</span><span class="op">,</span> value <span class="kw">=&gt;</span> [<span class="st">"remove"</span><span class="op">,</span> lands]]]<span class="op">,</span> {<span class="dt">required</span><span class="op">:</span> <span class="kw">true</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="79" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>viewof updateLand <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>([[<span class="st">"Add"</span><span class="op">,</span> value <span class="kw">=&gt;</span> [<span class="st">"add"</span><span class="op">,</span> lands]]<span class="op">,</span> [<span class="st">"Remove"</span><span class="op">,</span> value <span class="kw">=&gt;</span> [<span class="st">"remove"</span><span class="op">,</span> lands]]]<span class="op">,</span> {<span class="dt">required</span><span class="op">:</span> <span class="kw">true</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="declaration">
 
@@ -302,18 +305,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="84" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 83;"><span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>buildResultsContainer <span class="op">=</span> {</span>
-<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".results-container"</span>)</span>
-<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"div"</span>)</span>
-<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"results"</span>)</span>
-<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"p"</span>)<span class="op">;</span></span>
-<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".results-container"</span>)</span>
-<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">insert</span>(<span class="st">"label"</span><span class="op">,</span> <span class="st">".results"</span>)</span>
-<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">text</span>(<span class="st">"Public Land(s) (selected):"</span>)<span class="op">;</span></span>
-<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="87" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 86;"><span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>buildResultsContainer <span class="op">=</span> {</span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".results-container"</span>)</span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"div"</span>)</span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"results"</span>)</span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"p"</span>)<span class="op">;</span></span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".results-container"</span>)</span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">insert</span>(<span class="st">"label"</span><span class="op">,</span> <span class="st">".results"</span>)</span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">text</span>(<span class="st">"Public Land(s) (selected):"</span>)<span class="op">;</span></span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="declaration">
 
@@ -321,7 +324,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="99" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 98;"><span id="cb8-99"><a href="#cb8-99" aria-hidden="true" tabindex="-1"></a>viewof eBird_api_key <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">password</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"eBird API Key:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">""</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="102" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 101;"><span id="cb8-102"><a href="#cb8-102" aria-hidden="true" tabindex="-1"></a>viewof eBird_api_key <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">password</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"eBird API Key:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">""</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="declaration">
 
@@ -330,7 +333,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="btn-inline">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="104" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 103;"><span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>viewof runAPI <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Run"</span><span class="op">,</span> {<span class="dt">reduce</span><span class="op">:</span> call_eBird<span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="107" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 106;"><span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a>viewof runAPI <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Run"</span><span class="op">,</span> {<span class="dt">reduce</span><span class="op">:</span> call_eBird<span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="declaration">
 
@@ -342,18 +345,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="112" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 111;"><span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a>buildeBirdContainer <span class="op">=</span> {</span>
-<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".eBird-container"</span>)</span>
-<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"div"</span>)</span>
-<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"eBird"</span>)</span>
-<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"p"</span>)<span class="op">;</span></span>
-<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".eBird-container"</span>)</span>
-<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">insert</span>(<span class="st">"label"</span><span class="op">,</span> <span class="st">".eBird"</span>)</span>
-<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">text</span>(<span class="st">"Recent bird(s):"</span>)<span class="op">;</span></span>
-<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="115" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 114;"><span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a>buildeBirdContainer <span class="op">=</span> {</span>
+<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".eBird-container"</span>)</span>
+<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"div"</span>)</span>
+<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"eBird"</span>)</span>
+<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"p"</span>)<span class="op">;</span></span>
+<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".eBird-container"</span>)</span>
+<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">insert</span>(<span class="st">"label"</span><span class="op">,</span> <span class="st">".eBird"</span>)</span>
+<span id="cb10-124"><a href="#cb10-124" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">text</span>(<span class="st">"Recent bird(s):"</span>)<span class="op">;</span></span>
+<span id="cb10-125"><a href="#cb10-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-10" data-nodetype="declaration">
 
@@ -365,15 +368,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="g-col-24">
 <div class="panel-fill">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="129" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 128;"><span id="cb11-129"><a href="#cb11-129" aria-hidden="true" tabindex="-1"></a>container <span class="op">=</span> {</span>
-<span id="cb11-130"><a href="#cb11-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-131"><a href="#cb11-131" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> x <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"div"</span>)</span>
-<span id="cb11-132"><a href="#cb11-132" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb11-133"><a href="#cb11-133" aria-hidden="true" tabindex="-1"></a>  <span class="co">// x.attr("style", `width:100%;height:${window.outerHeight * 0.65}px`);</span></span>
-<span id="cb11-134"><a href="#cb11-134" aria-hidden="true" tabindex="-1"></a>  x<span class="op">.</span><span class="fu">attr</span>(<span class="st">"style"</span><span class="op">,</span> <span class="vs">`width:100%; min-height:750px`</span>)<span class="op">;</span></span>
-<span id="cb11-135"><a href="#cb11-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-136"><a href="#cb11-136" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> x<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
-<span id="cb11-137"><a href="#cb11-137" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="132" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 131;"><span id="cb11-132"><a href="#cb11-132" aria-hidden="true" tabindex="-1"></a>container <span class="op">=</span> {</span>
+<span id="cb11-133"><a href="#cb11-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-134"><a href="#cb11-134" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> x <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"div"</span>)</span>
+<span id="cb11-135"><a href="#cb11-135" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-136"><a href="#cb11-136" aria-hidden="true" tabindex="-1"></a>  <span class="co">// x.attr("style", `width:100%;height:${window.outerHeight * 0.65}px`);</span></span>
+<span id="cb11-137"><a href="#cb11-137" aria-hidden="true" tabindex="-1"></a>  x<span class="op">.</span><span class="fu">attr</span>(<span class="st">"style"</span><span class="op">,</span> <span class="vs">`width:100%; min-height:750px`</span>)<span class="op">;</span></span>
+<span id="cb11-138"><a href="#cb11-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-139"><a href="#cb11-139" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> x<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
+<span id="cb11-140"><a href="#cb11-140" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-11" data-nodetype="declaration">
 
@@ -381,61 +384,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="141" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 140;"><span id="cb12-141"><a href="#cb12-141" aria-hidden="true" tabindex="-1"></a>public_lands <span class="op">=</span> {</span>
-<span id="cb12-142"><a href="#cb12-142" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-143"><a href="#cb12-143" aria-hidden="true" tabindex="-1"></a>  <span class="co">// let map = L.map(container, {minZoom: 0, maxZoom: 16}); // define zoom level globally, but decided to do this on a layer by layer basis</span></span>
-<span id="cb12-144"><a href="#cb12-144" aria-hidden="true" tabindex="-1"></a>  <span class="co">// https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/#conversion-tool</span></span>
-<span id="cb12-145"><a href="#cb12-145" aria-hidden="true" tabindex="-1"></a>  <span class="co">// LOD is the zoom level, if not specified use the conversion tool to translate min / max scale to zoom level</span></span>
-<span id="cb12-146"><a href="#cb12-146" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-147"><a href="#cb12-147" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> map <span class="op">=</span> L<span class="op">.</span><span class="fu">map</span>(container)<span class="op">;</span></span>
-<span id="cb12-148"><a href="#cb12-148" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-149"><a href="#cb12-149" aria-hidden="true" tabindex="-1"></a>  <span class="co">// add basemap layers</span></span>
-<span id="cb12-150"><a href="#cb12-150" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> usgs <span class="op">=</span> <span class="st">"&lt;a href='https://www.usgs.gov/'&gt;U.S. Geological Survey&lt;/a&gt; | &lt;a href='https://www.usgs.gov/laws/policies_notices.html'&gt;Policies&lt;/a&gt;"</span><span class="op">;</span></span>
-<span id="cb12-151"><a href="#cb12-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-152"><a href="#cb12-152" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> MassGIS_Basemap <span class="op">=</span> L<span class="op">.</span><span class="at">esri</span><span class="op">.</span><span class="fu">tiledMapLayer</span>({</span>
-<span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span><span class="op">:</span> <span class="st">'https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGISBasemap/MapServer'</span><span class="op">,</span></span>
-<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a>    <span class="dt">attribution</span><span class="op">:</span> <span class="st">"&lt;a href='https://massgis.maps.arcgis.com/home/user.html?user=MassGIS'&gt;MassGIS, Mass. Executive Office of Technology Services and Security&lt;/a&gt;"</span><span class="op">,</span></span>
-<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ext</span><span class="op">:</span> <span class="st">'png'</span><span class="op">,</span></span>
-<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a>    <span class="dt">minZoom</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span> </span>
-<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a>    <span class="dt">maxZoom</span><span class="op">:</span> <span class="dv">19</span></span>
-<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb12-159"><a href="#cb12-159" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-160"><a href="#cb12-160" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> USGS_Img <span class="op">=</span> L<span class="op">.</span><span class="fu">tileLayer</span>(</span>
-<span id="cb12-161"><a href="#cb12-161" aria-hidden="true" tabindex="-1"></a>  <span class="st">'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}'</span><span class="op">,</span> </span>
-<span id="cb12-162"><a href="#cb12-162" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb12-163"><a href="#cb12-163" aria-hidden="true" tabindex="-1"></a>    <span class="dt">attribution</span><span class="op">:</span> usgs<span class="op">,</span></span>
-<span id="cb12-164"><a href="#cb12-164" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ext</span><span class="op">:</span> <span class="st">'png'</span><span class="op">,</span></span>
-<span id="cb12-165"><a href="#cb12-165" aria-hidden="true" tabindex="-1"></a>    <span class="dt">minZoom</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
-<span id="cb12-166"><a href="#cb12-166" aria-hidden="true" tabindex="-1"></a>    <span class="dt">maxZoom</span><span class="op">:</span> <span class="dv">16</span></span>
-<span id="cb12-167"><a href="#cb12-167" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb12-168"><a href="#cb12-168" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-169"><a href="#cb12-169" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> USGS_Topo <span class="op">=</span> L<span class="op">.</span><span class="fu">tileLayer</span>(</span>
-<span id="cb12-170"><a href="#cb12-170" aria-hidden="true" tabindex="-1"></a>  <span class="st">'https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}'</span><span class="op">,</span> </span>
-<span id="cb12-171"><a href="#cb12-171" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb12-172"><a href="#cb12-172" aria-hidden="true" tabindex="-1"></a>    <span class="dt">attribution</span><span class="op">:</span> usgs<span class="op">,</span></span>
-<span id="cb12-173"><a href="#cb12-173" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ext</span><span class="op">:</span> <span class="st">'png'</span><span class="op">,</span></span>
-<span id="cb12-174"><a href="#cb12-174" aria-hidden="true" tabindex="-1"></a>    <span class="dt">minZoom</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
-<span id="cb12-175"><a href="#cb12-175" aria-hidden="true" tabindex="-1"></a>    <span class="dt">maxZoom</span><span class="op">:</span> <span class="dv">16</span></span>
-<span id="cb12-176"><a href="#cb12-176" aria-hidden="true" tabindex="-1"></a>  })<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
-<span id="cb12-177"><a href="#cb12-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-178"><a href="#cb12-178" aria-hidden="true" tabindex="-1"></a>  <span class="co">// button to toggle basemap layer selection</span></span>
-<span id="cb12-179"><a href="#cb12-179" aria-hidden="true" tabindex="-1"></a>  L<span class="op">.</span><span class="at">control</span><span class="op">.</span><span class="fu">layers</span>(</span>
-<span id="cb12-180"><a href="#cb12-180" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb12-181"><a href="#cb12-181" aria-hidden="true" tabindex="-1"></a>      <span class="st">"USGS Topo"</span><span class="op">:</span> USGS_Topo<span class="op">,</span></span>
-<span id="cb12-182"><a href="#cb12-182" aria-hidden="true" tabindex="-1"></a>      <span class="st">"USGS Imagery Topo"</span><span class="op">:</span> USGS_Img<span class="op">,</span></span>
-<span id="cb12-183"><a href="#cb12-183" aria-hidden="true" tabindex="-1"></a>      <span class="st">"MassGIS"</span><span class="op">:</span> MassGIS_Basemap</span>
-<span id="cb12-184"><a href="#cb12-184" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb12-185"><a href="#cb12-185" aria-hidden="true" tabindex="-1"></a>    <span class="kw">null</span><span class="op">,</span></span>
-<span id="cb12-186"><a href="#cb12-186" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">position</span><span class="op">:</span> <span class="st">'topleft'</span>}</span>
-<span id="cb12-187"><a href="#cb12-187" aria-hidden="true" tabindex="-1"></a>  )<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
-<span id="cb12-188"><a href="#cb12-188" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-189"><a href="#cb12-189" aria-hidden="true" tabindex="-1"></a>  L<span class="op">.</span><span class="at">control</span><span class="op">.</span><span class="fu">scale</span>()<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
-<span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-191"><a href="#cb12-191" aria-hidden="true" tabindex="-1"></a>  map<span class="op">.</span><span class="fu">setView</span>([<span class="fl">39.0</span><span class="op">,</span> <span class="op">-</span><span class="fl">77.0</span>]<span class="op">,</span> <span class="dv">6</span>)<span class="op">;</span></span>
-<span id="cb12-192"><a href="#cb12-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-193"><a href="#cb12-193" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> map<span class="op">;</span> </span>
-<span id="cb12-194"><a href="#cb12-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-195"><a href="#cb12-195" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="144" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 143;"><span id="cb12-144"><a href="#cb12-144" aria-hidden="true" tabindex="-1"></a>public_lands <span class="op">=</span> {</span>
+<span id="cb12-145"><a href="#cb12-145" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-146"><a href="#cb12-146" aria-hidden="true" tabindex="-1"></a>  <span class="co">// let map = L.map(container, {minZoom: 0, maxZoom: 16}); // define zoom level globally, but decided to do this on a layer by layer basis</span></span>
+<span id="cb12-147"><a href="#cb12-147" aria-hidden="true" tabindex="-1"></a>  <span class="co">// https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/#conversion-tool</span></span>
+<span id="cb12-148"><a href="#cb12-148" aria-hidden="true" tabindex="-1"></a>  <span class="co">// LOD is the zoom level, if not specified use the conversion tool to translate min / max scale to zoom level</span></span>
+<span id="cb12-149"><a href="#cb12-149" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-150"><a href="#cb12-150" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> map <span class="op">=</span> L<span class="op">.</span><span class="fu">map</span>(container)<span class="op">;</span></span>
+<span id="cb12-151"><a href="#cb12-151" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-152"><a href="#cb12-152" aria-hidden="true" tabindex="-1"></a>  <span class="co">// add basemap layers</span></span>
+<span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> usgs <span class="op">=</span> <span class="st">"&lt;a href='https://www.usgs.gov/'&gt;U.S. Geological Survey&lt;/a&gt; | &lt;a href='https://www.usgs.gov/laws/policies_notices.html'&gt;Policies&lt;/a&gt;"</span><span class="op">;</span></span>
+<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> MassGIS_Basemap <span class="op">=</span> L<span class="op">.</span><span class="at">esri</span><span class="op">.</span><span class="fu">tiledMapLayer</span>({</span>
+<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span><span class="op">:</span> <span class="st">'https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGISBasemap/MapServer'</span><span class="op">,</span></span>
+<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a>    <span class="dt">attribution</span><span class="op">:</span> <span class="st">"&lt;a href='https://massgis.maps.arcgis.com/home/user.html?user=MassGIS'&gt;MassGIS, Mass. Executive Office of Technology Services and Security&lt;/a&gt;"</span><span class="op">,</span></span>
+<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ext</span><span class="op">:</span> <span class="st">'png'</span><span class="op">,</span></span>
+<span id="cb12-159"><a href="#cb12-159" aria-hidden="true" tabindex="-1"></a>    <span class="dt">minZoom</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span> </span>
+<span id="cb12-160"><a href="#cb12-160" aria-hidden="true" tabindex="-1"></a>    <span class="dt">maxZoom</span><span class="op">:</span> <span class="dv">19</span></span>
+<span id="cb12-161"><a href="#cb12-161" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb12-162"><a href="#cb12-162" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-163"><a href="#cb12-163" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> USGS_Img <span class="op">=</span> L<span class="op">.</span><span class="fu">tileLayer</span>(</span>
+<span id="cb12-164"><a href="#cb12-164" aria-hidden="true" tabindex="-1"></a>  <span class="st">'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}'</span><span class="op">,</span> </span>
+<span id="cb12-165"><a href="#cb12-165" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb12-166"><a href="#cb12-166" aria-hidden="true" tabindex="-1"></a>    <span class="dt">attribution</span><span class="op">:</span> usgs<span class="op">,</span></span>
+<span id="cb12-167"><a href="#cb12-167" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ext</span><span class="op">:</span> <span class="st">'png'</span><span class="op">,</span></span>
+<span id="cb12-168"><a href="#cb12-168" aria-hidden="true" tabindex="-1"></a>    <span class="dt">minZoom</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb12-169"><a href="#cb12-169" aria-hidden="true" tabindex="-1"></a>    <span class="dt">maxZoom</span><span class="op">:</span> <span class="dv">16</span></span>
+<span id="cb12-170"><a href="#cb12-170" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb12-171"><a href="#cb12-171" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-172"><a href="#cb12-172" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> USGS_Topo <span class="op">=</span> L<span class="op">.</span><span class="fu">tileLayer</span>(</span>
+<span id="cb12-173"><a href="#cb12-173" aria-hidden="true" tabindex="-1"></a>  <span class="st">'https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}'</span><span class="op">,</span> </span>
+<span id="cb12-174"><a href="#cb12-174" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb12-175"><a href="#cb12-175" aria-hidden="true" tabindex="-1"></a>    <span class="dt">attribution</span><span class="op">:</span> usgs<span class="op">,</span></span>
+<span id="cb12-176"><a href="#cb12-176" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ext</span><span class="op">:</span> <span class="st">'png'</span><span class="op">,</span></span>
+<span id="cb12-177"><a href="#cb12-177" aria-hidden="true" tabindex="-1"></a>    <span class="dt">minZoom</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb12-178"><a href="#cb12-178" aria-hidden="true" tabindex="-1"></a>    <span class="dt">maxZoom</span><span class="op">:</span> <span class="dv">16</span></span>
+<span id="cb12-179"><a href="#cb12-179" aria-hidden="true" tabindex="-1"></a>  })<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
+<span id="cb12-180"><a href="#cb12-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-181"><a href="#cb12-181" aria-hidden="true" tabindex="-1"></a>  <span class="co">// button to toggle basemap layer selection</span></span>
+<span id="cb12-182"><a href="#cb12-182" aria-hidden="true" tabindex="-1"></a>  L<span class="op">.</span><span class="at">control</span><span class="op">.</span><span class="fu">layers</span>(</span>
+<span id="cb12-183"><a href="#cb12-183" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb12-184"><a href="#cb12-184" aria-hidden="true" tabindex="-1"></a>      <span class="st">"USGS Topo"</span><span class="op">:</span> USGS_Topo<span class="op">,</span></span>
+<span id="cb12-185"><a href="#cb12-185" aria-hidden="true" tabindex="-1"></a>      <span class="st">"USGS Imagery Topo"</span><span class="op">:</span> USGS_Img<span class="op">,</span></span>
+<span id="cb12-186"><a href="#cb12-186" aria-hidden="true" tabindex="-1"></a>      <span class="st">"MassGIS"</span><span class="op">:</span> MassGIS_Basemap</span>
+<span id="cb12-187"><a href="#cb12-187" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb12-188"><a href="#cb12-188" aria-hidden="true" tabindex="-1"></a>    <span class="kw">null</span><span class="op">,</span></span>
+<span id="cb12-189"><a href="#cb12-189" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">position</span><span class="op">:</span> <span class="st">'topleft'</span>}</span>
+<span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a>  )<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
+<span id="cb12-191"><a href="#cb12-191" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-192"><a href="#cb12-192" aria-hidden="true" tabindex="-1"></a>  L<span class="op">.</span><span class="at">control</span><span class="op">.</span><span class="fu">scale</span>()<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
+<span id="cb12-193"><a href="#cb12-193" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-194"><a href="#cb12-194" aria-hidden="true" tabindex="-1"></a>  map<span class="op">.</span><span class="fu">setView</span>([<span class="fl">39.0</span><span class="op">,</span> <span class="op">-</span><span class="fl">77.0</span>]<span class="op">,</span> <span class="dv">6</span>)<span class="op">;</span></span>
+<span id="cb12-195"><a href="#cb12-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-196"><a href="#cb12-196" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> map<span class="op">;</span> </span>
+<span id="cb12-197"><a href="#cb12-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-198"><a href="#cb12-198" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-12" data-nodetype="declaration">
 
@@ -443,29 +446,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb13" data-startfrom="200" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 199;"><span id="cb13-200"><a href="#cb13-200" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> ({</span>
-<span id="cb13-201"><a href="#cb13-201" aria-hidden="true" tabindex="-1"></a>  <span class="dt">basic</span><span class="op">:</span> {</span>
-<span id="cb13-202"><a href="#cb13-202" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> <span class="fl">0.8</span><span class="op">,</span></span>
-<span id="cb13-203"><a href="#cb13-203" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillColor</span><span class="op">:</span> <span class="st">"#696969"</span><span class="op">,</span></span>
-<span id="cb13-204"><a href="#cb13-204" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span></span>
-<span id="cb13-205"><a href="#cb13-205" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#5e5e5e"</span><span class="op">,</span></span>
-<span id="cb13-206"><a href="#cb13-206" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.6</span></span>
-<span id="cb13-207"><a href="#cb13-207" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb13-208"><a href="#cb13-208" aria-hidden="true" tabindex="-1"></a>  <span class="dt">highlight</span><span class="op">:</span> {</span>
-<span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
-<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillColor</span><span class="op">:</span> <span class="st">"#35e6ab"</span><span class="op">,</span></span>
-<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.6</span><span class="op">,</span></span>
-<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#5e5e5e"</span><span class="op">,</span></span>
-<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.8</span></span>
-<span id="cb13-214"><a href="#cb13-214" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb13-215"><a href="#cb13-215" aria-hidden="true" tabindex="-1"></a>  <span class="dt">select</span><span class="op">:</span> {</span>
-<span id="cb13-216"><a href="#cb13-216" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> <span class="fl">1.0</span><span class="op">,</span></span>
-<span id="cb13-217"><a href="#cb13-217" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillColor</span><span class="op">:</span> <span class="st">"#e69035"</span><span class="op">,</span></span>
-<span id="cb13-218"><a href="#cb13-218" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span></span>
-<span id="cb13-219"><a href="#cb13-219" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#5e5e5e"</span><span class="op">,</span></span>
-<span id="cb13-220"><a href="#cb13-220" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.6</span></span>
-<span id="cb13-221"><a href="#cb13-221" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb13-222"><a href="#cb13-222" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb13" data-startfrom="203" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 202;"><span id="cb13-203"><a href="#cb13-203" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> ({</span>
+<span id="cb13-204"><a href="#cb13-204" aria-hidden="true" tabindex="-1"></a>  <span class="dt">basic</span><span class="op">:</span> {</span>
+<span id="cb13-205"><a href="#cb13-205" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> <span class="fl">0.8</span><span class="op">,</span></span>
+<span id="cb13-206"><a href="#cb13-206" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillColor</span><span class="op">:</span> <span class="st">"#696969"</span><span class="op">,</span></span>
+<span id="cb13-207"><a href="#cb13-207" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span></span>
+<span id="cb13-208"><a href="#cb13-208" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#5e5e5e"</span><span class="op">,</span></span>
+<span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.6</span></span>
+<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a>  <span class="dt">highlight</span><span class="op">:</span> {</span>
+<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillColor</span><span class="op">:</span> <span class="st">"#35e6ab"</span><span class="op">,</span></span>
+<span id="cb13-214"><a href="#cb13-214" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.6</span><span class="op">,</span></span>
+<span id="cb13-215"><a href="#cb13-215" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#5e5e5e"</span><span class="op">,</span></span>
+<span id="cb13-216"><a href="#cb13-216" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.8</span></span>
+<span id="cb13-217"><a href="#cb13-217" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb13-218"><a href="#cb13-218" aria-hidden="true" tabindex="-1"></a>  <span class="dt">select</span><span class="op">:</span> {</span>
+<span id="cb13-219"><a href="#cb13-219" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> <span class="fl">1.0</span><span class="op">,</span></span>
+<span id="cb13-220"><a href="#cb13-220" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillColor</span><span class="op">:</span> <span class="st">"#e69035"</span><span class="op">,</span></span>
+<span id="cb13-221"><a href="#cb13-221" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span></span>
+<span id="cb13-222"><a href="#cb13-222" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#5e5e5e"</span><span class="op">,</span></span>
+<span id="cb13-223"><a href="#cb13-223" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.6</span></span>
+<span id="cb13-224"><a href="#cb13-224" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb13-225"><a href="#cb13-225" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-13" data-nodetype="declaration">
 
@@ -473,8 +476,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="226" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 225;"><span id="cb14-226"><a href="#cb14-226" aria-hidden="true" tabindex="-1"></a><span class="co">// main variable for tracking public land selection</span></span>
-<span id="cb14-227"><a href="#cb14-227" aria-hidden="true" tabindex="-1"></a>mutable results <span class="op">=</span> []<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="229" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 228;"><span id="cb14-229"><a href="#cb14-229" aria-hidden="true" tabindex="-1"></a><span class="co">// main variable for tracking public land selection</span></span>
+<span id="cb14-230"><a href="#cb14-230" aria-hidden="true" tabindex="-1"></a>mutable results <span class="op">=</span> []<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-14" data-nodetype="declaration">
 
@@ -482,85 +485,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb15" data-startfrom="231" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 230;"><span id="cb15-231"><a href="#cb15-231" aria-hidden="true" tabindex="-1"></a>geojson <span class="op">=</span> {</span>
-<span id="cb15-232"><a href="#cb15-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-233"><a href="#cb15-233" aria-hidden="true" tabindex="-1"></a>  <span class="co">// indexOf returns index number if e exists, -1 otherwise</span></span>
-<span id="cb15-234"><a href="#cb15-234" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> idx <span class="op">=</span> (e) <span class="kw">=&gt;</span> { <span class="cf">return</span> results<span class="op">.</span><span class="fu">indexOf</span>(e<span class="op">.</span><span class="at">feature</span><span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span> }<span class="op">;</span></span>
-<span id="cb15-235"><a href="#cb15-235" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-236"><a href="#cb15-236" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> highlightFeature <span class="op">=</span> (e) <span class="kw">=&gt;</span> {</span>
-<span id="cb15-237"><a href="#cb15-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-238"><a href="#cb15-238" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">highlight</span>)<span class="op">;</span> </span>
-<span id="cb15-239"><a href="#cb15-239" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">bringToFront</span>()<span class="op">;</span></span>
-<span id="cb15-240"><a href="#cb15-240" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">openPopup</span>()<span class="op">;</span></span>
-<span id="cb15-241"><a href="#cb15-241" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-242"><a href="#cb15-242" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb15-243"><a href="#cb15-243" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-244"><a href="#cb15-244" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> resetHighlight <span class="op">=</span> (e) <span class="kw">=&gt;</span> { </span>
-<span id="cb15-245"><a href="#cb15-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-246"><a href="#cb15-246" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> q <span class="op">=</span> (<span class="fu">idx</span>(e<span class="op">.</span><span class="at">target</span>) <span class="op">&lt;</span> <span class="dv">0</span>) <span class="op">?</span> styles<span class="op">.</span><span class="at">basic</span> <span class="op">:</span> styles<span class="op">.</span><span class="at">select</span><span class="op">;</span></span>
-<span id="cb15-247"><a href="#cb15-247" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-248"><a href="#cb15-248" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(q)<span class="op">;</span></span>
-<span id="cb15-249"><a href="#cb15-249" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">closePopup</span>()<span class="op">;</span></span>
-<span id="cb15-250"><a href="#cb15-250" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-251"><a href="#cb15-251" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb15-252"><a href="#cb15-252" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-253"><a href="#cb15-253" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> toggleFeature <span class="op">=</span> (e) <span class="kw">=&gt;</span> {</span>
-<span id="cb15-254"><a href="#cb15-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-255"><a href="#cb15-255" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> i <span class="op">=</span> <span class="fu">idx</span>(e<span class="op">.</span><span class="at">target</span>)<span class="op">;</span></span>
-<span id="cb15-256"><a href="#cb15-256" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-257"><a href="#cb15-257" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="op">&gt;</span> <span class="op">-</span><span class="dv">1</span>) {</span>
-<span id="cb15-258"><a href="#cb15-258" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb15-259"><a href="#cb15-259" aria-hidden="true" tabindex="-1"></a>      e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">basic</span>)<span class="op">;</span></span>
-<span id="cb15-260"><a href="#cb15-260" aria-hidden="true" tabindex="-1"></a>      results<span class="op">.</span><span class="fu">splice</span>(i<span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb15-261"><a href="#cb15-261" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb15-262"><a href="#cb15-262" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb15-263"><a href="#cb15-263" aria-hidden="true" tabindex="-1"></a>              </span>
-<span id="cb15-264"><a href="#cb15-264" aria-hidden="true" tabindex="-1"></a>      e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">select</span>)<span class="op">;</span></span>
-<span id="cb15-265"><a href="#cb15-265" aria-hidden="true" tabindex="-1"></a>      results<span class="op">.</span><span class="fu">push</span>(e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">feature</span><span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span></span>
-<span id="cb15-266"><a href="#cb15-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-267"><a href="#cb15-267" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
-<span id="cb15-268"><a href="#cb15-268" aria-hidden="true" tabindex="-1"></a>          </span>
-<span id="cb15-269"><a href="#cb15-269" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb15-270"><a href="#cb15-270" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-271"><a href="#cb15-271" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> pop <span class="op">=</span> (e) <span class="kw">=&gt;</span> {</span>
-<span id="cb15-272"><a href="#cb15-272" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-273"><a href="#cb15-273" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> txt <span class="op">=</span> <span class="vs">`</span></span>
-<span id="cb15-274"><a href="#cb15-274" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="popup"&gt;</span></span>
-<span id="cb15-275"><a href="#cb15-275" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;h4&gt; Public Land &lt;/h4&gt;</span></span>
-<span id="cb15-276"><a href="#cb15-276" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;ul&gt;</span></span>
-<span id="cb15-277"><a href="#cb15-277" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Name:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Unit_Nm</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
-<span id="cb15-278"><a href="#cb15-278" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Type:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Own_Type</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
-<span id="cb15-279"><a href="#cb15-279" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Agency:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Own_Name</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
-<span id="cb15-280"><a href="#cb15-280" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;State:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">State_Nm</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
-<span id="cb15-281"><a href="#cb15-281" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Size (acres):&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">GIS_Acres</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
-<span id="cb15-282"><a href="#cb15-282" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/ul&gt;</span></span>
-<span id="cb15-283"><a href="#cb15-283" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
-<span id="cb15-284"><a href="#cb15-284" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span><span class="op">;</span></span>
-<span id="cb15-285"><a href="#cb15-285" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-286"><a href="#cb15-286" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> txt<span class="op">;</span></span>
-<span id="cb15-287"><a href="#cb15-287" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-288"><a href="#cb15-288" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb15-289"><a href="#cb15-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-290"><a href="#cb15-290" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> onEachFeature <span class="op">=</span> (feature<span class="op">,</span> layer) <span class="kw">=&gt;</span> {</span>
-<span id="cb15-291"><a href="#cb15-291" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-292"><a href="#cb15-292" aria-hidden="true" tabindex="-1"></a>    layer<span class="op">.</span><span class="fu">bindTooltip</span>(<span class="fu">pop</span>(feature)<span class="op">,</span> {<span class="dt">offset</span><span class="op">:</span> L<span class="op">.</span><span class="fu">point</span>(<span class="dv">30</span><span class="op">,</span> <span class="dv">0</span>)})<span class="op">;</span></span>
-<span id="cb15-293"><a href="#cb15-293" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-294"><a href="#cb15-294" aria-hidden="true" tabindex="-1"></a>    layer<span class="op">.</span><span class="fu">on</span>({</span>
-<span id="cb15-295"><a href="#cb15-295" aria-hidden="true" tabindex="-1"></a>      <span class="dt">mouseover</span><span class="op">:</span> highlightFeature<span class="op">,</span></span>
-<span id="cb15-296"><a href="#cb15-296" aria-hidden="true" tabindex="-1"></a>      <span class="dt">mouseout</span><span class="op">:</span> resetHighlight<span class="op">,</span></span>
-<span id="cb15-297"><a href="#cb15-297" aria-hidden="true" tabindex="-1"></a>      <span class="dt">click</span><span class="op">:</span> toggleFeature</span>
-<span id="cb15-298"><a href="#cb15-298" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
-<span id="cb15-299"><a href="#cb15-299" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb15-300"><a href="#cb15-300" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb15-301"><a href="#cb15-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-302"><a href="#cb15-302" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> layer <span class="op">=</span> L<span class="op">.</span><span class="fu">geoJSON</span>(fed_public_lands<span class="op">,</span> { </span>
-<span id="cb15-303"><a href="#cb15-303" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> styles<span class="op">.</span><span class="at">basic</span><span class="op">,</span> </span>
-<span id="cb15-304"><a href="#cb15-304" aria-hidden="true" tabindex="-1"></a>    <span class="dt">onEachFeature</span><span class="op">:</span> onEachFeature</span>
-<span id="cb15-305"><a href="#cb15-305" aria-hidden="true" tabindex="-1"></a>  })<span class="op">.</span><span class="fu">addTo</span>(public_lands)<span class="op">;</span></span>
-<span id="cb15-306"><a href="#cb15-306" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-307"><a href="#cb15-307" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> layer<span class="op">;</span></span>
-<span id="cb15-308"><a href="#cb15-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-309"><a href="#cb15-309" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb15" data-startfrom="234" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 233;"><span id="cb15-234"><a href="#cb15-234" aria-hidden="true" tabindex="-1"></a>geojson <span class="op">=</span> {</span>
+<span id="cb15-235"><a href="#cb15-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-236"><a href="#cb15-236" aria-hidden="true" tabindex="-1"></a>  <span class="co">// indexOf returns index number if e exists, -1 otherwise</span></span>
+<span id="cb15-237"><a href="#cb15-237" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> idx <span class="op">=</span> (e) <span class="kw">=&gt;</span> { <span class="cf">return</span> results<span class="op">.</span><span class="fu">indexOf</span>(e<span class="op">.</span><span class="at">feature</span><span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span> }<span class="op">;</span></span>
+<span id="cb15-238"><a href="#cb15-238" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-239"><a href="#cb15-239" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> highlightFeature <span class="op">=</span> (e) <span class="kw">=&gt;</span> {</span>
+<span id="cb15-240"><a href="#cb15-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-241"><a href="#cb15-241" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">highlight</span>)<span class="op">;</span> </span>
+<span id="cb15-242"><a href="#cb15-242" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">bringToFront</span>()<span class="op">;</span></span>
+<span id="cb15-243"><a href="#cb15-243" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">openPopup</span>()<span class="op">;</span></span>
+<span id="cb15-244"><a href="#cb15-244" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-245"><a href="#cb15-245" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb15-246"><a href="#cb15-246" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-247"><a href="#cb15-247" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> resetHighlight <span class="op">=</span> (e) <span class="kw">=&gt;</span> { </span>
+<span id="cb15-248"><a href="#cb15-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-249"><a href="#cb15-249" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> q <span class="op">=</span> (<span class="fu">idx</span>(e<span class="op">.</span><span class="at">target</span>) <span class="op">&lt;</span> <span class="dv">0</span>) <span class="op">?</span> styles<span class="op">.</span><span class="at">basic</span> <span class="op">:</span> styles<span class="op">.</span><span class="at">select</span><span class="op">;</span></span>
+<span id="cb15-250"><a href="#cb15-250" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-251"><a href="#cb15-251" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(q)<span class="op">;</span></span>
+<span id="cb15-252"><a href="#cb15-252" aria-hidden="true" tabindex="-1"></a>    e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">closePopup</span>()<span class="op">;</span></span>
+<span id="cb15-253"><a href="#cb15-253" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-254"><a href="#cb15-254" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb15-255"><a href="#cb15-255" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-256"><a href="#cb15-256" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> toggleFeature <span class="op">=</span> (e) <span class="kw">=&gt;</span> {</span>
+<span id="cb15-257"><a href="#cb15-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-258"><a href="#cb15-258" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> i <span class="op">=</span> <span class="fu">idx</span>(e<span class="op">.</span><span class="at">target</span>)<span class="op">;</span></span>
+<span id="cb15-259"><a href="#cb15-259" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-260"><a href="#cb15-260" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="op">&gt;</span> <span class="op">-</span><span class="dv">1</span>) {</span>
+<span id="cb15-261"><a href="#cb15-261" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-262"><a href="#cb15-262" aria-hidden="true" tabindex="-1"></a>      e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">basic</span>)<span class="op">;</span></span>
+<span id="cb15-263"><a href="#cb15-263" aria-hidden="true" tabindex="-1"></a>      results<span class="op">.</span><span class="fu">splice</span>(i<span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb15-264"><a href="#cb15-264" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb15-265"><a href="#cb15-265" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb15-266"><a href="#cb15-266" aria-hidden="true" tabindex="-1"></a>              </span>
+<span id="cb15-267"><a href="#cb15-267" aria-hidden="true" tabindex="-1"></a>      e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">select</span>)<span class="op">;</span></span>
+<span id="cb15-268"><a href="#cb15-268" aria-hidden="true" tabindex="-1"></a>      results<span class="op">.</span><span class="fu">push</span>(e<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">feature</span><span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span></span>
+<span id="cb15-269"><a href="#cb15-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-270"><a href="#cb15-270" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb15-271"><a href="#cb15-271" aria-hidden="true" tabindex="-1"></a>          </span>
+<span id="cb15-272"><a href="#cb15-272" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb15-273"><a href="#cb15-273" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-274"><a href="#cb15-274" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> pop <span class="op">=</span> (e) <span class="kw">=&gt;</span> {</span>
+<span id="cb15-275"><a href="#cb15-275" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-276"><a href="#cb15-276" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> txt <span class="op">=</span> <span class="vs">`</span></span>
+<span id="cb15-277"><a href="#cb15-277" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="popup"&gt;</span></span>
+<span id="cb15-278"><a href="#cb15-278" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;h4&gt; Public Land &lt;/h4&gt;</span></span>
+<span id="cb15-279"><a href="#cb15-279" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;ul&gt;</span></span>
+<span id="cb15-280"><a href="#cb15-280" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Name:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Unit_Nm</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
+<span id="cb15-281"><a href="#cb15-281" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Type:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Own_Type</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
+<span id="cb15-282"><a href="#cb15-282" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Agency:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">Own_Name</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
+<span id="cb15-283"><a href="#cb15-283" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;State:&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">State_Nm</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
+<span id="cb15-284"><a href="#cb15-284" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;li&gt; &lt;b&gt;Size (acres):&lt;/b&gt; </span><span class="sc">${</span>e<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">GIS_Acres</span><span class="sc">}</span><span class="vs"> &lt;/li&gt;</span></span>
+<span id="cb15-285"><a href="#cb15-285" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/ul&gt;</span></span>
+<span id="cb15-286"><a href="#cb15-286" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb15-287"><a href="#cb15-287" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span><span class="op">;</span></span>
+<span id="cb15-288"><a href="#cb15-288" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-289"><a href="#cb15-289" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> txt<span class="op">;</span></span>
+<span id="cb15-290"><a href="#cb15-290" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-291"><a href="#cb15-291" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb15-292"><a href="#cb15-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-293"><a href="#cb15-293" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> onEachFeature <span class="op">=</span> (feature<span class="op">,</span> layer) <span class="kw">=&gt;</span> {</span>
+<span id="cb15-294"><a href="#cb15-294" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-295"><a href="#cb15-295" aria-hidden="true" tabindex="-1"></a>    layer<span class="op">.</span><span class="fu">bindTooltip</span>(<span class="fu">pop</span>(feature)<span class="op">,</span> {<span class="dt">offset</span><span class="op">:</span> L<span class="op">.</span><span class="fu">point</span>(<span class="dv">30</span><span class="op">,</span> <span class="dv">0</span>)})<span class="op">;</span></span>
+<span id="cb15-296"><a href="#cb15-296" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-297"><a href="#cb15-297" aria-hidden="true" tabindex="-1"></a>    layer<span class="op">.</span><span class="fu">on</span>({</span>
+<span id="cb15-298"><a href="#cb15-298" aria-hidden="true" tabindex="-1"></a>      <span class="dt">mouseover</span><span class="op">:</span> highlightFeature<span class="op">,</span></span>
+<span id="cb15-299"><a href="#cb15-299" aria-hidden="true" tabindex="-1"></a>      <span class="dt">mouseout</span><span class="op">:</span> resetHighlight<span class="op">,</span></span>
+<span id="cb15-300"><a href="#cb15-300" aria-hidden="true" tabindex="-1"></a>      <span class="dt">click</span><span class="op">:</span> toggleFeature</span>
+<span id="cb15-301"><a href="#cb15-301" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb15-302"><a href="#cb15-302" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-303"><a href="#cb15-303" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb15-304"><a href="#cb15-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-305"><a href="#cb15-305" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> layer <span class="op">=</span> L<span class="op">.</span><span class="fu">geoJSON</span>(fed_public_lands<span class="op">,</span> { </span>
+<span id="cb15-306"><a href="#cb15-306" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> styles<span class="op">.</span><span class="at">basic</span><span class="op">,</span> </span>
+<span id="cb15-307"><a href="#cb15-307" aria-hidden="true" tabindex="-1"></a>    <span class="dt">onEachFeature</span><span class="op">:</span> onEachFeature</span>
+<span id="cb15-308"><a href="#cb15-308" aria-hidden="true" tabindex="-1"></a>  })<span class="op">.</span><span class="fu">addTo</span>(public_lands)<span class="op">;</span></span>
+<span id="cb15-309"><a href="#cb15-309" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-310"><a href="#cb15-310" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> layer<span class="op">;</span></span>
+<span id="cb15-311"><a href="#cb15-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-312"><a href="#cb15-312" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-15" data-nodetype="declaration">
 
@@ -573,7 +576,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <!-- THE REACTIONS -->
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb16" data-startfrom="316" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 315;"><span id="cb16-316"><a href="#cb16-316" aria-hidden="true" tabindex="-1"></a>mutable trigger <span class="op">=</span> [<span class="dv">0</span>]<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb16" data-startfrom="319" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 318;"><span id="cb16-319"><a href="#cb16-319" aria-hidden="true" tabindex="-1"></a>mutable trigger <span class="op">=</span> [<span class="dv">0</span>]<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-16" data-nodetype="declaration">
 
@@ -581,7 +584,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb17" data-startfrom="321" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 320;"><span id="cb17-321"><a href="#cb17-321" aria-hidden="true" tabindex="-1"></a>geojson<span class="op">.</span><span class="fu">on</span>(<span class="st">"click"</span><span class="op">,</span> (e) <span class="kw">=&gt;</span> { mutable trigger <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span> })<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb17" data-startfrom="324" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 323;"><span id="cb17-324"><a href="#cb17-324" aria-hidden="true" tabindex="-1"></a>geojson<span class="op">.</span><span class="fu">on</span>(<span class="st">"click"</span><span class="op">,</span> (e) <span class="kw">=&gt;</span> { mutable trigger <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span> })<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display hidden">
 <div id="ojs-cell-17" data-nodetype="expression">
 
@@ -589,21 +592,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb18" data-startfrom="326" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 325;"><span id="cb18-326"><a href="#cb18-326" aria-hidden="true" tabindex="-1"></a><span class="co">// Add public land name to results-container in side panel</span></span>
-<span id="cb18-327"><a href="#cb18-327" aria-hidden="true" tabindex="-1"></a>displayResults <span class="op">=</span> {</span>
-<span id="cb18-328"><a href="#cb18-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-329"><a href="#cb18-329" aria-hidden="true" tabindex="-1"></a>  trigger<span class="op">;</span></span>
-<span id="cb18-330"><a href="#cb18-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-331"><a href="#cb18-331" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> txt <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
-<span id="cb18-332"><a href="#cb18-332" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-333"><a href="#cb18-333" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (results<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span>) { results<span class="op">.</span><span class="fu">map</span>(e <span class="kw">=&gt;</span> txt <span class="op">=</span> txt <span class="op">+</span> e <span class="op">+</span> <span class="st">"&lt;br&gt;"</span>) }<span class="op">;</span></span>
-<span id="cb18-334"><a href="#cb18-334" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-335"><a href="#cb18-335" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".results"</span>)</span>
-<span id="cb18-336"><a href="#cb18-336" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"p"</span>)</span>
-<span id="cb18-337"><a href="#cb18-337" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>((d<span class="op">,</span>i) <span class="kw">=&gt;</span> { <span class="cf">return</span> i <span class="op">==</span> <span class="dv">0</span> })</span>
-<span id="cb18-338"><a href="#cb18-338" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(txt)<span class="op">;</span></span>
-<span id="cb18-339"><a href="#cb18-339" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-340"><a href="#cb18-340" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb18" data-startfrom="329" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 328;"><span id="cb18-329"><a href="#cb18-329" aria-hidden="true" tabindex="-1"></a><span class="co">// Add public land name to results-container in side panel</span></span>
+<span id="cb18-330"><a href="#cb18-330" aria-hidden="true" tabindex="-1"></a>displayResults <span class="op">=</span> {</span>
+<span id="cb18-331"><a href="#cb18-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-332"><a href="#cb18-332" aria-hidden="true" tabindex="-1"></a>  trigger<span class="op">;</span></span>
+<span id="cb18-333"><a href="#cb18-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-334"><a href="#cb18-334" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> txt <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb18-335"><a href="#cb18-335" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-336"><a href="#cb18-336" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (results<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span>) { results<span class="op">.</span><span class="fu">map</span>(e <span class="kw">=&gt;</span> txt <span class="op">=</span> txt <span class="op">+</span> e <span class="op">+</span> <span class="st">"&lt;br&gt;"</span>) }<span class="op">;</span></span>
+<span id="cb18-337"><a href="#cb18-337" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-338"><a href="#cb18-338" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".results"</span>)</span>
+<span id="cb18-339"><a href="#cb18-339" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"p"</span>)</span>
+<span id="cb18-340"><a href="#cb18-340" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>((d<span class="op">,</span>i) <span class="kw">=&gt;</span> { <span class="cf">return</span> i <span class="op">==</span> <span class="dv">0</span> })</span>
+<span id="cb18-341"><a href="#cb18-341" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(txt)<span class="op">;</span></span>
+<span id="cb18-342"><a href="#cb18-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-343"><a href="#cb18-343" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-18" data-nodetype="declaration">
 
@@ -611,29 +614,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb19" data-startfrom="344" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 343;"><span id="cb19-344"><a href="#cb19-344" aria-hidden="true" tabindex="-1"></a><span class="co">// Add sightings to eBird-container in side panel</span></span>
-<span id="cb19-345"><a href="#cb19-345" aria-hidden="true" tabindex="-1"></a>displayeBird <span class="op">=</span> {</span>
-<span id="cb19-346"><a href="#cb19-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-347"><a href="#cb19-347" aria-hidden="true" tabindex="-1"></a>  <span class="co">// let d = updateLand[0];</span></span>
-<span id="cb19-348"><a href="#cb19-348" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> txt <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
+<div class="sourceCode cell-code hidden" id="cb19" data-startfrom="347" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 346;"><span id="cb19-347"><a href="#cb19-347" aria-hidden="true" tabindex="-1"></a><span class="co">// Add sightings to eBird-container in side panel</span></span>
+<span id="cb19-348"><a href="#cb19-348" aria-hidden="true" tabindex="-1"></a>displayeBird <span class="op">=</span> {</span>
 <span id="cb19-349"><a href="#cb19-349" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-350"><a href="#cb19-350" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (runAPI <span class="op">==</span> <span class="kw">null</span>) {</span>
-<span id="cb19-351"><a href="#cb19-351" aria-hidden="true" tabindex="-1"></a>    txt <span class="op">=</span> txt<span class="op">;</span></span>
-<span id="cb19-352"><a href="#cb19-352" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (runAPI<span class="op">.</span><span class="at">length</span> <span class="op">==</span> <span class="dv">0</span>) {</span>
-<span id="cb19-353"><a href="#cb19-353" aria-hidden="true" tabindex="-1"></a>    txt <span class="op">=</span> txt <span class="op">+</span> <span class="st">"No recent sightings &lt;br&gt; To update, click Run again"</span><span class="op">;</span></span>
-<span id="cb19-354"><a href="#cb19-354" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (runAPI<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span>) { </span>
-<span id="cb19-355"><a href="#cb19-355" aria-hidden="true" tabindex="-1"></a>    runAPI<span class="op">.</span><span class="fu">map</span>(e <span class="kw">=&gt;</span> txt <span class="op">=</span> txt <span class="op">+</span> e<span class="op">.</span><span class="at">comName</span> <span class="op">+</span> <span class="st">": "</span> <span class="op">+</span> e<span class="op">.</span><span class="at">howMany</span> <span class="op">+</span> <span class="st">"&lt;br&gt;"</span>)<span class="op">;</span></span>
-<span id="cb19-356"><a href="#cb19-356" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> names <span class="op">=</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(runAPI<span class="op">.</span><span class="fu">map</span>(e <span class="kw">=&gt;</span> (e<span class="op">.</span><span class="at">locName</span>)))]<span class="op">;</span></span>
-<span id="cb19-357"><a href="#cb19-357" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(names)<span class="op">;</span></span>
-<span id="cb19-358"><a href="#cb19-358" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb19-359"><a href="#cb19-359" aria-hidden="true" tabindex="-1"></a>  <span class="co">// console.log(txt);</span></span>
-<span id="cb19-360"><a href="#cb19-360" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb19-361"><a href="#cb19-361" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".eBird"</span>)</span>
-<span id="cb19-362"><a href="#cb19-362" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"p"</span>)</span>
-<span id="cb19-363"><a href="#cb19-363" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>((d<span class="op">,</span>i) <span class="kw">=&gt;</span> { <span class="cf">return</span> i <span class="op">==</span> <span class="dv">0</span> })</span>
-<span id="cb19-364"><a href="#cb19-364" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(txt)<span class="op">;</span></span>
-<span id="cb19-365"><a href="#cb19-365" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-366"><a href="#cb19-366" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-350"><a href="#cb19-350" aria-hidden="true" tabindex="-1"></a>  <span class="co">// let d = updateLand[0];</span></span>
+<span id="cb19-351"><a href="#cb19-351" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> txt <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb19-352"><a href="#cb19-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-353"><a href="#cb19-353" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (runAPI <span class="op">==</span> <span class="kw">null</span>) {</span>
+<span id="cb19-354"><a href="#cb19-354" aria-hidden="true" tabindex="-1"></a>    txt <span class="op">=</span> txt <span class="op">+</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb19-355"><a href="#cb19-355" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (runAPI<span class="op">.</span><span class="at">length</span> <span class="op">==</span> <span class="dv">0</span>) {</span>
+<span id="cb19-356"><a href="#cb19-356" aria-hidden="true" tabindex="-1"></a>    txt <span class="op">=</span> txt <span class="op">+</span> <span class="st">"No recent sightings &lt;br&gt; To update, click Run again"</span><span class="op">;</span></span>
+<span id="cb19-357"><a href="#cb19-357" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (runAPI<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span>) { </span>
+<span id="cb19-358"><a href="#cb19-358" aria-hidden="true" tabindex="-1"></a>    runAPI<span class="op">.</span><span class="fu">map</span>(e <span class="kw">=&gt;</span> txt <span class="op">=</span> txt <span class="op">+</span> e<span class="op">.</span><span class="at">comName</span> <span class="op">+</span> <span class="st">": "</span> <span class="op">+</span> e<span class="op">.</span><span class="at">howMany</span> <span class="op">+</span> <span class="st">"&lt;br&gt;"</span>)<span class="op">;</span></span>
+<span id="cb19-359"><a href="#cb19-359" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> names <span class="op">=</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(runAPI<span class="op">.</span><span class="fu">map</span>(e <span class="kw">=&gt;</span> (e<span class="op">.</span><span class="at">locName</span>)))]<span class="op">;</span></span>
+<span id="cb19-360"><a href="#cb19-360" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(names)<span class="op">;</span></span>
+<span id="cb19-361"><a href="#cb19-361" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb19-362"><a href="#cb19-362" aria-hidden="true" tabindex="-1"></a>  <span class="co">// console.log(txt);</span></span>
+<span id="cb19-363"><a href="#cb19-363" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-364"><a href="#cb19-364" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(<span class="st">".eBird"</span>)</span>
+<span id="cb19-365"><a href="#cb19-365" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"p"</span>)</span>
+<span id="cb19-366"><a href="#cb19-366" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>((d<span class="op">,</span>i) <span class="kw">=&gt;</span> { <span class="cf">return</span> i <span class="op">==</span> <span class="dv">0</span> })</span>
+<span id="cb19-367"><a href="#cb19-367" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(txt)<span class="op">;</span></span>
+<span id="cb19-368"><a href="#cb19-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-369"><a href="#cb19-369" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-19" data-nodetype="declaration">
 
@@ -641,41 +644,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb20" data-startfrom="371" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 370;"><span id="cb20-371"><a href="#cb20-371" aria-hidden="true" tabindex="-1"></a>geojson<span class="op">.</span><span class="fu">eachLayer</span>(e <span class="kw">=&gt;</span> {</span>
-<span id="cb20-372"><a href="#cb20-372" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb20-373"><a href="#cb20-373" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> p <span class="op">=</span> e<span class="op">.</span><span class="at">feature</span><span class="op">.</span><span class="at">properties</span><span class="op">;</span></span>
-<span id="cb20-374"><a href="#cb20-374" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> d <span class="op">=</span> updateLand[<span class="dv">0</span>]<span class="op">;</span></span>
-<span id="cb20-375"><a href="#cb20-375" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> b <span class="op">=</span> updateLand[<span class="dv">1</span>]<span class="op">;</span></span>
-<span id="cb20-376"><a href="#cb20-376" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> i <span class="op">=</span> results<span class="op">.</span><span class="fu">indexOf</span>(p<span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span></span>
-<span id="cb20-377"><a href="#cb20-377" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb20-378"><a href="#cb20-378" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (p<span class="op">.</span><span class="at">Unit_Nm</span> <span class="op">==</span> b) {</span>
-<span id="cb20-379"><a href="#cb20-379" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb20-380"><a href="#cb20-380" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (d <span class="op">==</span> <span class="st">"add"</span>) {</span>
-<span id="cb20-381"><a href="#cb20-381" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-382"><a href="#cb20-382" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (i <span class="op">&lt;</span> <span class="dv">0</span>) {</span>
-<span id="cb20-383"><a href="#cb20-383" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb20-384"><a href="#cb20-384" aria-hidden="true" tabindex="-1"></a>        e<span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">select</span>)<span class="op">;</span></span>
-<span id="cb20-385"><a href="#cb20-385" aria-hidden="true" tabindex="-1"></a>        results<span class="op">.</span><span class="fu">push</span>(p<span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span></span>
-<span id="cb20-386"><a href="#cb20-386" aria-hidden="true" tabindex="-1"></a>        mutable trigger <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb20-387"><a href="#cb20-387" aria-hidden="true" tabindex="-1"></a>        public_lands<span class="op">.</span><span class="fu">fitBounds</span>(e<span class="op">.</span><span class="fu">getBounds</span>())<span class="op">;</span></span>
-<span id="cb20-388"><a href="#cb20-388" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-389"><a href="#cb20-389" aria-hidden="true" tabindex="-1"></a>      }<span class="op">;</span></span>
-<span id="cb20-390"><a href="#cb20-390" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb20-391"><a href="#cb20-391" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> { </span>
-<span id="cb20-392"><a href="#cb20-392" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-393"><a href="#cb20-393" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (i <span class="op">&gt;</span> <span class="op">-</span><span class="dv">1</span>) {</span>
-<span id="cb20-394"><a href="#cb20-394" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb20-395"><a href="#cb20-395" aria-hidden="true" tabindex="-1"></a>        e<span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">basic</span>)<span class="op">;</span></span>
-<span id="cb20-396"><a href="#cb20-396" aria-hidden="true" tabindex="-1"></a>        results<span class="op">.</span><span class="fu">splice</span>(i<span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb20-397"><a href="#cb20-397" aria-hidden="true" tabindex="-1"></a>        mutable trigger <span class="op">-=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb20-398"><a href="#cb20-398" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb20-399"><a href="#cb20-399" aria-hidden="true" tabindex="-1"></a>      }<span class="op">;</span></span>
-<span id="cb20-400"><a href="#cb20-400" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb20-401"><a href="#cb20-401" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
-<span id="cb20-402"><a href="#cb20-402" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb20-403"><a href="#cb20-403" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> { }<span class="op">;</span></span>
-<span id="cb20-404"><a href="#cb20-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-405"><a href="#cb20-405" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb20" data-startfrom="374" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 373;"><span id="cb20-374"><a href="#cb20-374" aria-hidden="true" tabindex="-1"></a>geojson<span class="op">.</span><span class="fu">eachLayer</span>(e <span class="kw">=&gt;</span> {</span>
+<span id="cb20-375"><a href="#cb20-375" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb20-376"><a href="#cb20-376" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> p <span class="op">=</span> e<span class="op">.</span><span class="at">feature</span><span class="op">.</span><span class="at">properties</span><span class="op">;</span></span>
+<span id="cb20-377"><a href="#cb20-377" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> d <span class="op">=</span> updateLand[<span class="dv">0</span>]<span class="op">;</span></span>
+<span id="cb20-378"><a href="#cb20-378" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> b <span class="op">=</span> updateLand[<span class="dv">1</span>]<span class="op">;</span></span>
+<span id="cb20-379"><a href="#cb20-379" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> i <span class="op">=</span> results<span class="op">.</span><span class="fu">indexOf</span>(p<span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span></span>
+<span id="cb20-380"><a href="#cb20-380" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-381"><a href="#cb20-381" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (p<span class="op">.</span><span class="at">Unit_Nm</span> <span class="op">==</span> b) {</span>
+<span id="cb20-382"><a href="#cb20-382" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-383"><a href="#cb20-383" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (d <span class="op">==</span> <span class="st">"add"</span>) {</span>
+<span id="cb20-384"><a href="#cb20-384" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-385"><a href="#cb20-385" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (i <span class="op">&lt;</span> <span class="dv">0</span>) {</span>
+<span id="cb20-386"><a href="#cb20-386" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-387"><a href="#cb20-387" aria-hidden="true" tabindex="-1"></a>        e<span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">select</span>)<span class="op">;</span></span>
+<span id="cb20-388"><a href="#cb20-388" aria-hidden="true" tabindex="-1"></a>        results<span class="op">.</span><span class="fu">push</span>(p<span class="op">.</span><span class="at">Unit_Nm</span>)<span class="op">;</span></span>
+<span id="cb20-389"><a href="#cb20-389" aria-hidden="true" tabindex="-1"></a>        mutable trigger <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb20-390"><a href="#cb20-390" aria-hidden="true" tabindex="-1"></a>        public_lands<span class="op">.</span><span class="fu">fitBounds</span>(e<span class="op">.</span><span class="fu">getBounds</span>())<span class="op">;</span></span>
+<span id="cb20-391"><a href="#cb20-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-392"><a href="#cb20-392" aria-hidden="true" tabindex="-1"></a>      }<span class="op">;</span></span>
+<span id="cb20-393"><a href="#cb20-393" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-394"><a href="#cb20-394" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> { </span>
+<span id="cb20-395"><a href="#cb20-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-396"><a href="#cb20-396" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (i <span class="op">&gt;</span> <span class="op">-</span><span class="dv">1</span>) {</span>
+<span id="cb20-397"><a href="#cb20-397" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb20-398"><a href="#cb20-398" aria-hidden="true" tabindex="-1"></a>        e<span class="op">.</span><span class="fu">setStyle</span>(styles<span class="op">.</span><span class="at">basic</span>)<span class="op">;</span></span>
+<span id="cb20-399"><a href="#cb20-399" aria-hidden="true" tabindex="-1"></a>        results<span class="op">.</span><span class="fu">splice</span>(i<span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb20-400"><a href="#cb20-400" aria-hidden="true" tabindex="-1"></a>        mutable trigger <span class="op">-=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb20-401"><a href="#cb20-401" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb20-402"><a href="#cb20-402" aria-hidden="true" tabindex="-1"></a>      }<span class="op">;</span></span>
+<span id="cb20-403"><a href="#cb20-403" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-404"><a href="#cb20-404" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb20-405"><a href="#cb20-405" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-406"><a href="#cb20-406" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> { }<span class="op">;</span></span>
+<span id="cb20-407"><a href="#cb20-407" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-408"><a href="#cb20-408" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display hidden">
 <div id="ojs-cell-20" data-nodetype="expression">
 
@@ -689,7 +692,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </main> <!-- /main -->
 
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"L = {\r\n  const L = await require(\"leaflet/dist/leaflet.js\");\r\n  if (!L._style) {\r\n    const href = await require.resolve(\"leaflet/dist/leaflet.css\");\r\n    document.head.appendChild(L._style = html`<link href=${href} rel=stylesheet>`);\r\n  }\r\n  L.esri = await require(\"esri-leaflet/dist/esri-leaflet.js\");\r\n  // L.esri.Heat = await r(\"esri-leaflet-heatmap\");\r\n  // await r(\"leaflet.heat\").catch(() => L.heatLayer);\r\n  return L;\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"// load geojson\r\nfed_public_lands = await FileAttachment(\"data/protected_lands_visited.geojson\").json();\r\n\r\n// load json\r\neBird_hotspots = await FileAttachment(\"data/protected_lands_eBird.json\").json();\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"land_names = {\r\n\r\n  let a = fed_public_lands.features.map(x => x.properties.Unit_Nm);\r\n  \r\n  // get unique values\r\n  return [... new Set(a)];\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"call_eBird = function() {\r\n\r\n  let txt = \"\";  \r\n  let url = \"https://api.ebird.org/v2/data/obs/US/recent?back=14&hotspot=true&r=\";\r\n\r\n  if (results.length > 0) { \r\n  \r\n    // txt = txt + url + results.map(e => eBird_hotspots.hotspot_id[eBird_hotspots.fed_land.indexOf(e)])\r\n    txt = txt + url + results.map(e => eBird_hotspots[e]) \r\n\r\n    return fetch(txt, {\r\n      headers: {\r\n        'x-ebirdapitoken': eBird_api_key,\r\n      }\r\n    })\r\n    .then(res => {\r\n      return res.json()\r\n    });\r\n    \r\n  };\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"viewof lands = Inputs.select(land_names, { label: \"Public Lands:\" });\r\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"viewof updateLand = Inputs.button([[\"Add\", value => [\"add\", lands]], [\"Remove\", value => [\"remove\", lands]]], {required: true});\r\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"buildResultsContainer = {\r\n\r\n  d3.select(\".results-container\")\r\n    .append(\"div\")\r\n    .attr(\"class\", \"results\")\r\n    .append(\"p\");\r\n  \r\n  d3.select(\".results-container\")\r\n    .insert(\"label\", \".results\")\r\n    .text(\"Public Land(s) (selected):\");\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-8","inline":false,"source":"viewof eBird_api_key = Inputs.password({label: \"eBird API Key:\", value: \"\"})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-9","inline":false,"source":"viewof runAPI = Inputs.button(\"Run\", {reduce: call_eBird, value: null});\r\n"},{"methodName":"interpret","cellName":"ojs-cell-10","inline":false,"source":"buildeBirdContainer = {\r\n\r\n  d3.select(\".eBird-container\")\r\n    .append(\"div\")\r\n    .attr(\"class\", \"eBird\")\r\n    .append(\"p\");\r\n  \r\n  d3.select(\".eBird-container\")\r\n    .insert(\"label\", \".eBird\")\r\n    .text(\"Recent bird(s):\");\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-11","inline":false,"source":"container = {\r\n\r\n  let x = d3.create(\"div\")\r\n  \r\n  // x.attr(\"style\", `width:100%;height:${window.outerHeight * 0.65}px`);\r\n  x.attr(\"style\", `width:100%; min-height:750px`);\r\n\r\n  return x.node();\r\n}\r\n"},{"methodName":"interpret","cellName":"ojs-cell-12","inline":false,"source":"public_lands = {\r\n  \r\n  // let map = L.map(container, {minZoom: 0, maxZoom: 16}); // define zoom level globally, but decided to do this on a layer by layer basis\r\n  // https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/#conversion-tool\r\n  // LOD is the zoom level, if not specified use the conversion tool to translate min / max scale to zoom level\r\n  \r\n  let map = L.map(container);\r\n  \r\n  // add basemap layers\r\n  const usgs = \"<a href='https://www.usgs.gov/'>U.S. Geological Survey</a> | <a href='https://www.usgs.gov/laws/policies_notices.html'>Policies</a>\";\r\n\r\n  const MassGIS_Basemap = L.esri.tiledMapLayer({\r\n    url: 'https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGISBasemap/MapServer',\r\n    attribution: \"<a href='https://massgis.maps.arcgis.com/home/user.html?user=MassGIS'>MassGIS, Mass. Executive Office of Technology Services and Security</a>\",\r\n    ext: 'png',\r\n    minZoom: 7, \r\n    maxZoom: 19\r\n  });\r\n  \r\n  const USGS_Img = L.tileLayer(\r\n  'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', \r\n  {\r\n  \tattribution: usgs,\r\n  \text: 'png',\r\n    minZoom: 0,\r\n    maxZoom: 16\r\n  });\r\n  \r\n  const USGS_Topo = L.tileLayer(\r\n  'https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}', \r\n  {\r\n    attribution: usgs,\r\n    ext: 'png',\r\n    minZoom: 0,\r\n    maxZoom: 16\r\n  }).addTo(map);\r\n\r\n  // button to toggle basemap layer selection\r\n  L.control.layers(\r\n    {\r\n      \"USGS Topo\": USGS_Topo,\r\n      \"USGS Imagery Topo\": USGS_Img,\r\n      \"MassGIS\": MassGIS_Basemap\r\n    },\r\n    null,\r\n    {position: 'topleft'}\r\n  ).addTo(map);\r\n  \r\n  L.control.scale().addTo(map);\r\n  \r\n  map.setView([39.0, -77.0], 6);\r\n\r\n  return map; \r\n\r\n};\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-13","inline":false,"source":"styles = ({\r\n  basic: {\r\n    weight: 0.8,\r\n    fillColor: \"#696969\",\r\n    fillOpacity: 0.4,\r\n    color: \"#5e5e5e\",\r\n    opacity: 0.6\r\n  },\r\n  highlight: {\r\n    weight: 1.2,\r\n    fillColor: \"#35e6ab\",\r\n    fillOpacity: 0.6,\r\n    color: \"#5e5e5e\",\r\n    opacity: 0.8\r\n  },\r\n  select: {\r\n    weight: 1.0,\r\n    fillColor: \"#e69035\",\r\n    fillOpacity: 0.4,\r\n    color: \"#5e5e5e\",\r\n    opacity: 0.6\r\n  }\r\n});\r\n"},{"methodName":"interpret","cellName":"ojs-cell-14","inline":false,"source":"// main variable for tracking public land selection\r\nmutable results = [];\r\n"},{"methodName":"interpret","cellName":"ojs-cell-15","inline":false,"source":"geojson = {\r\n\r\n  // indexOf returns index number if e exists, -1 otherwise\r\n  const idx = (e) => { return results.indexOf(e.feature.properties.Unit_Nm); };\r\n  \r\n  const highlightFeature = (e) => {\r\n\r\n    e.target.setStyle(styles.highlight); \r\n    e.target.bringToFront();\r\n    e.target.openPopup();\r\n  \r\n  };\r\n  \r\n  const resetHighlight = (e) => { \r\n\r\n    let q = (idx(e.target) < 0) ? styles.basic : styles.select;\r\n    \r\n    e.target.setStyle(q);\r\n    e.target.closePopup();\r\n  \r\n  };\r\n  \r\n  const toggleFeature = (e) => {\r\n\r\n    const i = idx(e.target);\r\n    \r\n    if (i > -1) {\r\n            \r\n      e.target.setStyle(styles.basic);\r\n      results.splice(i, 1);\r\n      \r\n    } else {\r\n              \r\n      e.target.setStyle(styles.select);\r\n      results.push(e.target.feature.properties.Unit_Nm);\r\n\r\n    };\r\n          \r\n  };\r\n  \r\n  const pop = (e) => {\r\n  \r\n    const txt = `\r\n      <div class=\"popup\">\r\n        <h4> Public Land </h4>\r\n        <ul>\r\n          <li> <b>Name:</b> ${e.properties.Unit_Nm} </li>\r\n          <li> <b>Type:</b> ${e.properties.Own_Type} </li>\r\n          <li> <b>Agency:</b> ${e.properties.Own_Name} </li>\r\n          <li> <b>State:</b> ${e.properties.State_Nm} </li>\r\n          <li> <b>Size (acres):</b> ${e.properties.GIS_Acres} </li>\r\n        </ul>\r\n      </div>\r\n    `;\r\n    \r\n    return txt;\r\n    \r\n  };\r\n\r\n  const onEachFeature = (feature, layer) => {\r\n    \r\n    layer.bindTooltip(pop(feature), {offset: L.point(30, 0)});\r\n    \r\n    layer.on({\r\n      mouseover: highlightFeature,\r\n      mouseout: resetHighlight,\r\n      click: toggleFeature\r\n    });\r\n    \r\n  }\r\n\r\n  let layer = L.geoJSON(fed_public_lands, { \r\n    style: styles.basic, \r\n    onEachFeature: onEachFeature\r\n  }).addTo(public_lands);\r\n  \r\n  return layer;\r\n\r\n}\r\n"},{"methodName":"interpret","cellName":"ojs-cell-16","inline":false,"source":"mutable trigger = [0];\r\n"},{"methodName":"interpret","cellName":"ojs-cell-17","inline":false,"source":"\r\ngeojson.on(\"click\", (e) => { mutable trigger += 1; });\r\n"},{"methodName":"interpret","cellName":"ojs-cell-18","inline":false,"source":"// Add public land name to results-container in side panel\r\ndisplayResults = {\r\n\r\n  trigger;\r\n\r\n  let txt = \"\";\r\n  \r\n  if (results.length > 0) { results.map(e => txt = txt + e + \"<br>\") };\r\n  \r\n  d3.select(\".results\")\r\n    .selectAll(\"p\")\r\n    .filter((d,i) => { return i == 0 })\r\n    .html(txt);\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-19","inline":false,"source":"// Add sightings to eBird-container in side panel\r\ndisplayeBird = {\r\n\r\n  // let d = updateLand[0];\r\n  let txt = \"\";\r\n\r\n  if (runAPI == null) {\r\n    txt = txt;\r\n  } else if (runAPI.length == 0) {\r\n    txt = txt + \"No recent sightings <br> To update, click Run again\";\r\n  } else if (runAPI.length > 0) { \r\n    runAPI.map(e => txt = txt + e.comName + \": \" + e.howMany + \"<br>\");\r\n    const names = [...new Set(runAPI.map(e => (e.locName)))];\r\n    console.log(names);\r\n  };\r\n  // console.log(txt);\r\n  \r\n  d3.select(\".eBird\")\r\n    .selectAll(\"p\")\r\n    .filter((d,i) => { return i == 0 })\r\n    .html(txt);\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-20","inline":false,"source":"\r\ngeojson.eachLayer(e => {\r\n      \r\n  let p = e.feature.properties;\r\n  let d = updateLand[0];\r\n  let b = updateLand[1];\r\n  let i = results.indexOf(p.Unit_Nm);\r\n  \r\n  if (p.Unit_Nm == b) {\r\n  \r\n    if (d == \"add\") {\r\n    \r\n      if (i < 0) {\r\n  \r\n        e.setStyle(styles.select);\r\n        results.push(p.Unit_Nm);\r\n        mutable trigger += 1;\r\n        public_lands.fitBounds(e.getBounds());\r\n\r\n      };\r\n  \r\n    } else { \r\n\r\n      if (i > -1) {\r\n      \r\n        e.setStyle(styles.basic);\r\n        results.splice(i, 1);\r\n        mutable trigger -= 1;\r\n      \r\n      };\r\n  \r\n    };\r\n  \r\n  } else { };\r\n\r\n});\r\n"},{"methodName":"interpretQuiet","source":"shinyInput('lands')"},{"methodName":"interpretQuiet","source":"shinyInput('updateLand')"},{"methodName":"interpretQuiet","source":"shinyInput('eBird_api_key')"},{"methodName":"interpretQuiet","source":"shinyInput('runAPI')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"L = {\r\n  const L = await require(\"leaflet/dist/leaflet.js\");\r\n  if (!L._style) {\r\n    const href = await require.resolve(\"leaflet/dist/leaflet.css\");\r\n    document.head.appendChild(L._style = html`<link href=${href} rel=stylesheet>`);\r\n  }\r\n  L.esri = await require(\"esri-leaflet/dist/esri-leaflet.js\");\r\n  // L.esri.Heat = await r(\"esri-leaflet-heatmap\");\r\n  // await r(\"leaflet.heat\").catch(() => L.heatLayer);\r\n  return L;\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"// load geojson\r\nfed_public_lands = await FileAttachment(\"data/protected_lands_visited.geojson\").json();\r\n\r\n// load json\r\neBird_hotspots = await FileAttachment(\"data/protected_lands_eBird.json\").json();\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"land_names = {\r\n\r\n  let a = fed_public_lands.features.map(x => x.properties.Unit_Nm);\r\n  \r\n  // get unique values\r\n  return [... new Set(a)];\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"call_eBird = function() {\r\n\r\n  let txt = \"\";  \r\n  let url = \"https://api.ebird.org/v2/data/obs/US/recent?back=14&hotspot=true&r=\";\r\n\r\n  if (results.length > 0) { \r\n  \r\n    // txt = txt + url + results.map(e => eBird_hotspots.hotspot_id[eBird_hotspots.fed_land.indexOf(e)])\r\n    txt = txt + url + results.map(e => eBird_hotspots[e]) \r\n\r\n    return fetch(txt, {\r\n      headers: {\r\n        'x-ebirdapitoken': eBird_api_key,\r\n      }\r\n    })\r\n    .then(res => {\r\n      let bird_sightings = res.json();\r\n      // console.log(bird_sightings);\r\n      return bird_sightings;\r\n    });\r\n    \r\n  };\r\n  \r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"viewof lands = Inputs.select(land_names, { label: \"Public Lands:\" });\r\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"viewof updateLand = Inputs.button([[\"Add\", value => [\"add\", lands]], [\"Remove\", value => [\"remove\", lands]]], {required: true});\r\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"buildResultsContainer = {\r\n\r\n  d3.select(\".results-container\")\r\n    .append(\"div\")\r\n    .attr(\"class\", \"results\")\r\n    .append(\"p\");\r\n  \r\n  d3.select(\".results-container\")\r\n    .insert(\"label\", \".results\")\r\n    .text(\"Public Land(s) (selected):\");\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-8","inline":false,"source":"viewof eBird_api_key = Inputs.password({label: \"eBird API Key:\", value: \"\"})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-9","inline":false,"source":"viewof runAPI = Inputs.button(\"Run\", {reduce: call_eBird, value: null});\r\n"},{"methodName":"interpret","cellName":"ojs-cell-10","inline":false,"source":"buildeBirdContainer = {\r\n\r\n  d3.select(\".eBird-container\")\r\n    .append(\"div\")\r\n    .attr(\"class\", \"eBird\")\r\n    .append(\"p\");\r\n  \r\n  d3.select(\".eBird-container\")\r\n    .insert(\"label\", \".eBird\")\r\n    .text(\"Recent bird(s):\");\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-11","inline":false,"source":"container = {\r\n\r\n  let x = d3.create(\"div\")\r\n  \r\n  // x.attr(\"style\", `width:100%;height:${window.outerHeight * 0.65}px`);\r\n  x.attr(\"style\", `width:100%; min-height:750px`);\r\n\r\n  return x.node();\r\n}\r\n"},{"methodName":"interpret","cellName":"ojs-cell-12","inline":false,"source":"public_lands = {\r\n  \r\n  // let map = L.map(container, {minZoom: 0, maxZoom: 16}); // define zoom level globally, but decided to do this on a layer by layer basis\r\n  // https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/#conversion-tool\r\n  // LOD is the zoom level, if not specified use the conversion tool to translate min / max scale to zoom level\r\n  \r\n  let map = L.map(container);\r\n  \r\n  // add basemap layers\r\n  const usgs = \"<a href='https://www.usgs.gov/'>U.S. Geological Survey</a> | <a href='https://www.usgs.gov/laws/policies_notices.html'>Policies</a>\";\r\n\r\n  const MassGIS_Basemap = L.esri.tiledMapLayer({\r\n    url: 'https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGISBasemap/MapServer',\r\n    attribution: \"<a href='https://massgis.maps.arcgis.com/home/user.html?user=MassGIS'>MassGIS, Mass. Executive Office of Technology Services and Security</a>\",\r\n    ext: 'png',\r\n    minZoom: 7, \r\n    maxZoom: 19\r\n  });\r\n  \r\n  const USGS_Img = L.tileLayer(\r\n  'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', \r\n  {\r\n  \tattribution: usgs,\r\n  \text: 'png',\r\n    minZoom: 0,\r\n    maxZoom: 16\r\n  });\r\n  \r\n  const USGS_Topo = L.tileLayer(\r\n  'https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}', \r\n  {\r\n    attribution: usgs,\r\n    ext: 'png',\r\n    minZoom: 0,\r\n    maxZoom: 16\r\n  }).addTo(map);\r\n\r\n  // button to toggle basemap layer selection\r\n  L.control.layers(\r\n    {\r\n      \"USGS Topo\": USGS_Topo,\r\n      \"USGS Imagery Topo\": USGS_Img,\r\n      \"MassGIS\": MassGIS_Basemap\r\n    },\r\n    null,\r\n    {position: 'topleft'}\r\n  ).addTo(map);\r\n  \r\n  L.control.scale().addTo(map);\r\n  \r\n  map.setView([39.0, -77.0], 6);\r\n\r\n  return map; \r\n\r\n};\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-13","inline":false,"source":"styles = ({\r\n  basic: {\r\n    weight: 0.8,\r\n    fillColor: \"#696969\",\r\n    fillOpacity: 0.4,\r\n    color: \"#5e5e5e\",\r\n    opacity: 0.6\r\n  },\r\n  highlight: {\r\n    weight: 1.2,\r\n    fillColor: \"#35e6ab\",\r\n    fillOpacity: 0.6,\r\n    color: \"#5e5e5e\",\r\n    opacity: 0.8\r\n  },\r\n  select: {\r\n    weight: 1.0,\r\n    fillColor: \"#e69035\",\r\n    fillOpacity: 0.4,\r\n    color: \"#5e5e5e\",\r\n    opacity: 0.6\r\n  }\r\n});\r\n"},{"methodName":"interpret","cellName":"ojs-cell-14","inline":false,"source":"// main variable for tracking public land selection\r\nmutable results = [];\r\n"},{"methodName":"interpret","cellName":"ojs-cell-15","inline":false,"source":"geojson = {\r\n\r\n  // indexOf returns index number if e exists, -1 otherwise\r\n  const idx = (e) => { return results.indexOf(e.feature.properties.Unit_Nm); };\r\n  \r\n  const highlightFeature = (e) => {\r\n\r\n    e.target.setStyle(styles.highlight); \r\n    e.target.bringToFront();\r\n    e.target.openPopup();\r\n  \r\n  };\r\n  \r\n  const resetHighlight = (e) => { \r\n\r\n    let q = (idx(e.target) < 0) ? styles.basic : styles.select;\r\n    \r\n    e.target.setStyle(q);\r\n    e.target.closePopup();\r\n  \r\n  };\r\n  \r\n  const toggleFeature = (e) => {\r\n\r\n    const i = idx(e.target);\r\n    \r\n    if (i > -1) {\r\n            \r\n      e.target.setStyle(styles.basic);\r\n      results.splice(i, 1);\r\n      \r\n    } else {\r\n              \r\n      e.target.setStyle(styles.select);\r\n      results.push(e.target.feature.properties.Unit_Nm);\r\n\r\n    };\r\n          \r\n  };\r\n  \r\n  const pop = (e) => {\r\n  \r\n    const txt = `\r\n      <div class=\"popup\">\r\n        <h4> Public Land </h4>\r\n        <ul>\r\n          <li> <b>Name:</b> ${e.properties.Unit_Nm} </li>\r\n          <li> <b>Type:</b> ${e.properties.Own_Type} </li>\r\n          <li> <b>Agency:</b> ${e.properties.Own_Name} </li>\r\n          <li> <b>State:</b> ${e.properties.State_Nm} </li>\r\n          <li> <b>Size (acres):</b> ${e.properties.GIS_Acres} </li>\r\n        </ul>\r\n      </div>\r\n    `;\r\n    \r\n    return txt;\r\n    \r\n  };\r\n\r\n  const onEachFeature = (feature, layer) => {\r\n    \r\n    layer.bindTooltip(pop(feature), {offset: L.point(30, 0)});\r\n    \r\n    layer.on({\r\n      mouseover: highlightFeature,\r\n      mouseout: resetHighlight,\r\n      click: toggleFeature\r\n    });\r\n    \r\n  }\r\n\r\n  let layer = L.geoJSON(fed_public_lands, { \r\n    style: styles.basic, \r\n    onEachFeature: onEachFeature\r\n  }).addTo(public_lands);\r\n  \r\n  return layer;\r\n\r\n}\r\n"},{"methodName":"interpret","cellName":"ojs-cell-16","inline":false,"source":"mutable trigger = [0];\r\n"},{"methodName":"interpret","cellName":"ojs-cell-17","inline":false,"source":"\r\ngeojson.on(\"click\", (e) => { mutable trigger += 1; });\r\n"},{"methodName":"interpret","cellName":"ojs-cell-18","inline":false,"source":"// Add public land name to results-container in side panel\r\ndisplayResults = {\r\n\r\n  trigger;\r\n\r\n  let txt = \"\";\r\n  \r\n  if (results.length > 0) { results.map(e => txt = txt + e + \"<br>\") };\r\n  \r\n  d3.select(\".results\")\r\n    .selectAll(\"p\")\r\n    .filter((d,i) => { return i == 0 })\r\n    .html(txt);\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-19","inline":false,"source":"// Add sightings to eBird-container in side panel\r\ndisplayeBird = {\r\n\r\n  // let d = updateLand[0];\r\n  let txt = \"\";\r\n\r\n  if (runAPI == null) {\r\n    txt = txt + \"\";\r\n  } else if (runAPI.length == 0) {\r\n    txt = txt + \"No recent sightings <br> To update, click Run again\";\r\n  } else if (runAPI.length > 0) { \r\n    runAPI.map(e => txt = txt + e.comName + \": \" + e.howMany + \"<br>\");\r\n    const names = [...new Set(runAPI.map(e => (e.locName)))];\r\n    console.log(names);\r\n  };\r\n  // console.log(txt);\r\n  \r\n  d3.select(\".eBird\")\r\n    .selectAll(\"p\")\r\n    .filter((d,i) => { return i == 0 })\r\n    .html(txt);\r\n\r\n};\r\n"},{"methodName":"interpret","cellName":"ojs-cell-20","inline":false,"source":"\r\ngeojson.eachLayer(e => {\r\n      \r\n  let p = e.feature.properties;\r\n  let d = updateLand[0];\r\n  let b = updateLand[1];\r\n  let i = results.indexOf(p.Unit_Nm);\r\n  \r\n  if (p.Unit_Nm == b) {\r\n  \r\n    if (d == \"add\") {\r\n    \r\n      if (i < 0) {\r\n  \r\n        e.setStyle(styles.select);\r\n        results.push(p.Unit_Nm);\r\n        mutable trigger += 1;\r\n        public_lands.fitBounds(e.getBounds());\r\n\r\n      };\r\n  \r\n    } else { \r\n\r\n      if (i > -1) {\r\n      \r\n        e.setStyle(styles.basic);\r\n        results.splice(i, 1);\r\n        mutable trigger -= 1;\r\n      \r\n      };\r\n  \r\n    };\r\n  \r\n  } else { };\r\n\r\n});\r\n"},{"methodName":"interpretQuiet","source":"shinyInput('lands')"},{"methodName":"interpretQuiet","source":"shinyInput('updateLand')"},{"methodName":"interpretQuiet","source":"shinyInput('eBird_api_key')"},{"methodName":"interpretQuiet","source":"shinyInput('runAPI')"}]}
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

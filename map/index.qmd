@@ -59,10 +59,13 @@ call_eBird = function() {
       }
     })
     .then(res => {
-      return res.json()
+      let bird_sightings = res.json();
+      // console.log(bird_sightings);
+      return bird_sightings;
     });
     
   };
+  
 
 };
 ```
@@ -349,7 +352,7 @@ displayeBird = {
   let txt = "";
 
   if (runAPI == null) {
-    txt = txt;
+    txt = txt + "";
   } else if (runAPI.length == 0) {
     txt = txt + "No recent sightings <br> To update, click Run again";
   } else if (runAPI.length > 0) { 
