@@ -16,6 +16,8 @@ website:
     left:
       - text: Projects
         href: projects/index.qmd
+      - text: Blog
+        href: blog/index.qmd
 
     # your social media handles
     right:

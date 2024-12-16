@@ -1,0 +1,24 @@
+---
+title: "Blog"
+title-block-banner: "rgba(0, 70, 127, 1)"
+author: ""
+listing:
+  - id: posts_2024
+    contents: "2024/**/index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+    categories: true
+page-layout: full
+toc-title: Year
+toc-location: right
+date-format: "MMM D"
+code-tools: false
+comments: false
+engine: knitr
+freeze: false
+---
+
+## 2024
+
+:::{#posts_2024}
+:::

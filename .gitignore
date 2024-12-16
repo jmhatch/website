@@ -5,3 +5,4 @@
 
 old_gh_pages/
 data-raw/ # git restore --staged data-raw/ or git reset data-raw/
+blog/2024/12/16/audiomoth/refs/

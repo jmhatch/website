@@ -2,5 +2,11 @@
   {
     "listing": "/projects/index.html",
     "items": []
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/2024/12/16/audiomoth/index.html"
+    ]
   }
 ]
