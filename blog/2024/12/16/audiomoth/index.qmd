@@ -24,6 +24,8 @@ With the increase in low-cost monitoring tools, like the AudioMoth, it has never
 I programmed my AudioMoth to record for 3 hours every morning (5:30 am - 8:30 am) starting on May 12 and ending on June 15. My goal was to understand what birds were using or moving through my backyard during spring migration. I finally got around to processing each recording using [BirdNet-Analyzer](https://github.com/kahst/BirdNET-Analyzer), which can detect bird calls or songs from the audio and assign those to species. Below is a graph showing the relative frequency of detected bird occurrences in my backyard over the course of a month (give or take). So cool! 
 
 ```{ojs}
+//| echo: false
+
 // load d3
 d3 = require("d3@7")
 format = d3.format(".01%")
@@ -34,7 +36,7 @@ bird_freq_filt = bird_freq.filter((d) => d.freq > 0.001)
 ```
 
 ```{ojs}
-//| panel: fill
+//| panel: center
 //| fig-cap: "Relative frequency of detected bird occurrences from AudioMoth recordings."
 
 // d3 plot
