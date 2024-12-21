@@ -19,7 +19,7 @@ North American bird populations have declined by about 29% since 1970 ([Rosenber
 
 With the increase in low-cost monitoring tools, like the AudioMoth, it has never been easier for citizen science to make an impact on long-term scientific research. The AudioMoth is an acoustic recording device that allows the everyday Joe Shmoe to acoustically monitor wildlife in their own backyard. The AudioMoth is small, similar in size to a credit card, with a built-in microphone, SD storage card, and microprocessor. All of that is to say that the AudioMoth can be programmed to record during certain times of day, like the morning chorus, for an extended period.
 
-![AudioMoth diagram from [Hill et al. (2019)](https://www.sciencedirect.com/science/article/pii/S2468067219300306).](img/fig_1_audiomoth.jpg){height=100%}
+![AudioMoth diagram from [Hill et al. (2019)](https://www.sciencedirect.com/science/article/pii/S2468067219300306).](img/fig_1_audiomoth.jpg){width=100% height=100%}
 
 I programmed my AudioMoth to record for 3 hours every morning (5:30 am - 8:30 am) starting on May 12 and ending on June 15. My goal was to understand what birds were using or moving through my backyard during spring migration. I finally got around to processing each recording using [BirdNet-Analyzer](https://github.com/kahst/BirdNET-Analyzer), which can detect bird calls or songs from the audio and assign those to species. Below is a graph showing the relative frequency of detected bird occurrences in my backyard over the course of a month (give or take). So cool! 
 
@@ -36,7 +36,8 @@ bird_freq_filt = bird_freq.filter((d) => d.freq > 0.001)
 ```
 
 ```{ojs}
-//| panel: center
+//| layout-align: right
+//| fig-align: right
 //| fig-cap: "Relative frequency of detected bird occurrences from AudioMoth recordings."
 
 // d3 plot
