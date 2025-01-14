@@ -36,9 +36,6 @@ bird_freq_filt = bird_freq.filter((d) => d.freq > 0.001)
 ```
 
 ```{ojs}
-//| panel: fill
-//| layout-align: right
-//| fig-align: right
 //| fig-cap: "Relative frequency of detected bird occurrences from AudioMoth recordings."
 
 // d3 plot

@@ -373,9 +373,16 @@ displayeBird = {
   } else if (runAPI.length == 0) {
     txt = txt + "No recent sightings <br> To update, click Run again";
   } else if (runAPI.length > 0) { 
-    runAPI.map(e => txt = txt + e.comName + ": " + e.howMany + "<br>");
-    const names = [...new Set(runAPI.map(e => (e.locName)))];
-    console.log(names);
+    let byName = d3.rollups(runAPI, v => d3.sum(v, d => d.howMany), d => d.comName); 
+    let byName_v2 = byName.map(function(d) {
+      if (d[1] == 0) {
+        d[1] = 'undefined';
+      } 
+      return(d)});
+    byName_v2.map(e => txt = txt + e[0] + ": " + e[1] + "<br>");
+    // runAPI.map(e => txt = txt + e.comName + ": " + e.howMany + "<br>");
+    // const names = [...new Set(runAPI.map(e => (e.locName)))];
+    // console.log(names);
   };
   // console.log(txt);
   
